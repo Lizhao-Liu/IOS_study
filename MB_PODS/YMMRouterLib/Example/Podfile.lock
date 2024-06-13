@@ -1,0 +1,16 @@
+PODS:
+  - YMMRouterLib (0.1.0)
+
+DEPENDENCIES:
+  - YMMRouterLib (from `../`)
+
+EXTERNAL SOURCES:
+  YMMRouterLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YMMRouterLib: 44527563d6611ee5b627bbb1e61847ba478ed2bd
+
+PODFILE CHECKSUM: 9e77cedb38666a98ecd51cb660e24b80d82054d5
+
+COCOAPODS: 1.5.3

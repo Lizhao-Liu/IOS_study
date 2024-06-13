@@ -1,0 +1,131 @@
+@import '~@fta/components/style/mixins/index.scss';
+
+@mixin flex($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin font($size: 28px, $color: #333, $weight: 400, $line-height: $size * 1.2) {
+  font-size: $size;
+  color: $color;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+
+.demo-overall {
+  // @include flex();
+  // height: 100vh;
+  // background-color: #eee;
+  // overflow: hidden;
+  // &-nav-bar {
+  //   display: flex;
+  // }
+
+  &-container {
+    @include flex();
+    margin-top: 30px;
+    /* #ifndef rn */
+    overflow: auto;
+    /* #endif */
+    /* #ifndef alipay rn*/
+    overflow: auto !important;
+    /* #endif */
+  }
+
+  &-intro {
+    max-width: 100%;
+    padding: 0 29px;
+    @include border-box;
+    font-size: 0;
+    &-image {
+      width: 692px;
+      height: 267px;
+    }
+    // padding: 30px;
+  }
+
+  &-tab-bar {
+    @include flex(row);
+  }
+
+  &-title-container {
+    @include flex(row);
+    justify-content: space-between;
+  }
+
+  &-title {
+    @include flex(column);
+    justify-content: space-around;
+
+    &__text {
+      @include font(50px, #333, 600);
+    }
+
+    &__text--care {
+      font-size: care(50px);
+      line-height: care(60px);
+    }
+
+    &__desc {
+      @include font(32px, #8a95ac);
+    }
+
+    &__desc--care {
+      font-size: care(32px);
+      line-height: care(32 * 1.2px);
+    }
+  }
+
+  &-desc {
+    margin-top: 40px;
+    &__text {
+      @include font(32px, #606266, 400, 48px);
+    }
+
+    &__text--care {
+      font-size: care(32px);
+      line-height: care(48px);
+    }
+  }
+
+  &-logo {
+    width: 140px;
+    height: 140px;
+  }
+
+  &-list {
+    margin-bottom: 30px;
+    padding: 0 29px;
+  }
+
+  &-components {
+    margin-top: 33px;
+    &__text {
+      @include font(27px, #6f6f6f, 400, 42px);
+      /* #ifndef rn */
+      display: block;
+      /* #endif */
+      margin-bottom: 10px;
+      padding-left: 15px;
+    }
+
+    &__text--care {
+      font-size: care(27px);
+      line-height: care(42px);
+    }
+  }
+
+  /* #ifndef rn */
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+    background-color: #efefef;
+  }
+  /*滚动条的轨道*/
+  ::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #efefef;
+  }
+
+  /* #endif */
+}

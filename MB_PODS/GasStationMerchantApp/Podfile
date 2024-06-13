@@ -1,0 +1,253 @@
+source 'git@code.amh-group.com:iOSYmm/mb-specrepo.git'
+source 'git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git'  # 满帮内网第三方库
+
+platform :ios, '11.0'
+
+install! 'cocoapods', :deterministic_uuids => false
+
+#use_frameworks!
+#inhibit_all_warnings!
+use_modular_headers!
+
+def thirdparty
+
+  pod 'GasStationMerchantMainModule', :path => './'
+  pod 'AAChartKit', '5.0.4', :inhibit_warnings => true
+  pod 'AFNetworking', '4.0.1.12', :inhibit_warnings => true
+  pod 'AlipaySDK-iOS', '15.8.6', :inhibit_warnings => true
+  pod 'AliyunOSSiOS', '2.10.8', :inhibit_warnings => true
+  pod 'Bugly', '2.5.4', :inhibit_warnings => true
+  pod 'CocoaAsyncSocket', '7.6.3', :inhibit_warnings => true
+  pod 'UICollectionViewLeftAlignedLayout', '1.0.2', :inhibit_warnings => true
+  pod 'DTCoreText', '1.6.21.8', :inhibit_warnings => true
+  pod 'FKTableCollectionExtensionBase', '1.0.6', :inhibit_warnings => true
+  pod 'FKTableView', '1.2.8', :inhibit_warnings => true
+  pod 'FMDB', '2.7.5.2', :inhibit_warnings => true
+  pod 'HwOBS', '3.20.11.1', :inhibit_warnings => true
+  pod 'LKDBHelper', '2.5.1.7', :inhibit_warnings => true
+  pod 'SQLCipher', '4.3.0', :inhibit_warnings => true
+  pod 'GZIP', '1.2.2.1', :inhibit_warnings => true
+  pod 'IQKeyboardManager', '5.0.6', :inhibit_warnings => true
+  pod 'iflyMSC', '0.1.0', :inhibit_warnings => true
+  pod 'KVOController', '1.2.0', :inhibit_warnings => true
+  pod 'Matrix', '1.0.8.4', :inhibit_warnings => true
+  pod 'Masonry', '1.1.2.1', :inhibit_warnings => true
+  pod 'MBProgressHUD', '0.9.2.4', :inhibit_warnings => true
+  pod 'MMKV', '1.2.4', :inhibit_warnings => true
+  pod 'MMKVCore', '1.2.4', :inhibit_warnings => true
+  pod 'MJRefresh', '3.7.2', :inhibit_warnings => true
+  pod 'OpenSSL-HCB', '1.1.1c', :inhibit_warnings => true
+  pod 'ReactiveObjC', '3.1.1.1', :inhibit_warnings => true
+  pod 'RegexKitLite', '4.0', :inhibit_warnings => true
+  pod 'RSSwizzle', '0.1.0.1', :inhibit_warnings => true
+  pod 'SDWebImage', '5.15.5.3', :inhibit_warnings => true
+  pod 'SDWebImageWebPCoder', '0.8.4.2', :inhibit_warnings => true
+  pod 'WechatOpenSDK', '1.8.7.1', :inhibit_warnings => true
+  pod 'JSONKit', '2.0.0', :inhibit_warnings => true
+  pod 'Reachability', '3.5.1', :inhibit_warnings => true
+  #pod 'SKAutoScrollLabel', '0.0.6', :inhibit_warnings => true
+  pod 'TypedJSON', '1.2.0', :inhibit_warnings => true
+  pod 'YYCache', '1.0.4', :inhibit_warnings => true
+  pod 'YYImage', '1.0.4', :inhibit_warnings => true
+  pod 'YYModel', '1.0.4.1', :inhibit_warnings => true
+  pod 'YYText', '1.0.7.3', :inhibit_warnings => true
+  pod 'JSONModel', '1.8.0', :inhibit_warnings => true
+  pod 'SSZipArchive', '2.2.3', :inhibit_warnings => true
+  pod 'ScanKitFrameWork', '1.1.0.305'
+  pod 'lottie-ios', '2.5.2'
+  pod 'PLzmaSDK', '1.3.0.3', :inhibit_warnings => true
+  
+end
+
+def mbbasic
+  #HCB a-z
+  pod 'HCBAppBasis', '4.5.4'
+  pod 'HCBCodeScaner', '2.1.21'
+  pod 'HCBLoginSDK', '1.0.14'
+  pod 'HCBNetwork', '5.2.33'
+  pod 'HCBUserBasis', '2.1.6'
+  pod 'HCBWebConsole', '~> 1.2.1'
+
+  #MB a-z
+  pod 'MBAPMLib', '0.21.2'
+  pod 'MBAPMServiceLib', '0.14.0'
+  pod 'MBAdvertModuleService', '0.9.17'
+  pod 'MBAppBasisModule', '0.6.19'
+  pod 'MBBuildPreLib', '0.1.0'
+  pod 'MBCommonUILib', '0.10.5'
+  pod 'MBConfigCenter', '1.9.15'
+  pod 'MBConfigCenterService', '0.3.5'
+  mb_debug_module_pod 'MBDebug', '3.3.4'
+  mb_debug_module_pod 'MBDebugService', '0.5.4'
+  pod 'MBDoctor', '1.12.1'
+  pod 'MBDoctorService', '0.12.0'
+  pod 'MBDynamicContainerLib', '0.1.31'
+  pod 'MBFeedbackService', '0.1.6'
+  pod 'MBFileTransferLib', '0.4.2.3'
+  pod 'MBFoundation', '0.9.1.1'
+  pod 'MBLocationLib', '1.2.79'
+  pod 'MBLogLib', '0.6.0'
+  pod 'MBMapLibModuleService', '0.1.0'
+  pod 'MBMediaLib', '0.3.19'
+  pod 'MBNetworkCache', '1.0.4'
+  pod 'MBNetworkLib', '1.1.13'
+  pod 'MBPrivacyService', '0.1.23'
+
+  pod 'MBProjectConfig', '0.17.3'
+  pod 'MBRiskControlSecurityLib', '0.7.3.1'
+  pod 'MBRiskControlSecurityServiceLib', '0.6.0'
+  pod 'MBRNServiceLib', '0.1.2'
+  pod 'MBSecurityLib', '0.2.27'
+  pod 'MBServiceModule', '0.2.6', :subspecs=> ['Api', 'Imp']
+  pod 'MBShareService', '0.2.0'
+  pod 'MBShareLib', '0.2.8'
+  pod 'MBShareModule', '0.2.4'
+  pod 'MBShareWX', '0.1.7'
+  pod 'MBStorageLib', '0.9.0'
+  pod 'MBStorageBridgeImp', '0.1.0'
+  pod 'MBStorageLibService', '0.5.0'
+  pod 'MBLauncherLib', '0.12.2'
+  pod 'MBUIKit', '0.18.0'
+  pod 'MBVersionModule', '1.4.2'
+  pod 'MBXarLib', '0.2.19.5'
+  pod 'MBXarLibService', '0.0.10'
+  pod 'MBFlutterLib', :git => 'git@code.amh-group.com:MBFrontend/iOS/MBFlutterLib.git', :tag => 'gsMerchant-beta2'
+  pod 'MBMarketingService', '1.3.9'
+  pod 'MBJSCore_iOS', '0.1.30'
+  pod 'MBWalletDoctor', '0.3.2'
+  pod 'MBWalletHttp', '1.20.1'
+
+  pod 'MBWalletModuleService', '0.9.1'
+  pod 'MBWebView', '0.30.20'
+  pod 'MBWechatOpenSDK', '0.1.1'
+
+  #YMM a-z
+  pod 'YMMAuditService', '0.1.32'
+  pod 'YMMActionModule', '1.2.18'
+  pod 'YMMBridgeLib', '1.9.2'
+  pod 'YMMBridgeModule', '1.12.3'
+  pod 'YMMBridgeModuleService', '0.2.0'
+  pod 'YMMCommunicateLib', '1.6.0'
+
+  pod 'YMMExprLib', '0.1.70'
+  pod 'MBLiveActivityLib', '0.1.10'
+  pod 'YMMImagePicker', '1.12.2'
+  #新长连接库
+  pod 'MBMessageCenterLib', '0.4.7.2'
+  pod 'YMMMainServices', '0.10.6'
+  pod 'MBMarioLib', '1.8.3'
+  pod 'MBMarioServices', '1.2.0'
+  pod 'YMMMineService', '0.1.84'
+  pod 'YMMModuleLib', '0.19.7'
+  pod 'YMMNetwork', '1.6.2'
+  
+  pod 'YMMPayLib/Services', '0.3.10'
+#  启动流程不需要隐私协议页，暂时先注释掉
+#  pod 'YMMPrivacyModule', '1.2.11'
+  pod 'MBPushModuleService', '0.2.4'
+  
+  pod 'YMMRouterLib', '0.46.1.1'
+  pod 'YMMRouterModule', '1.5.2'
+  pod 'YMMTTSLib', '0.4.16'
+  pod 'YMMUserModuleService', '0.3.23'
+end
+
+def mbbiz
+  #金融
+  pod 'HCBFinancialTools', '4.30.2'
+  pod 'HCBRiskShield/DeviceInfo', '4.24.1'
+  pod 'HCBWallet', '3.28.3-beta1'
+end
+
+def mb_debug_module_pod (name, tag)
+  pod "#{name}", "#{tag}", :configurations => ['Debug', 'AdHoc']
+end
+
+def mbdebug_pods
+  mb_debug_module_pod 'DoraemonKit', '3.0.2.8'
+  mb_debug_module_pod 'FBRetainCycleDetector', '0.1.4.6'
+  mb_debug_module_pod 'LookinServer', '1.0.0'
+  mb_debug_module_pod 'MBAPMDebug', '0.4.13'
+  mb_debug_module_pod 'MBConfigCenterDebug', '0.3.3'
+  mb_debug_module_pod 'MBDoctorDebug', '1.1.4'
+  # mb_debug_module_pod 'MBLocationLibDebug', '1.3.18-beta1'
+  mb_debug_module_pod 'MBLogLibDebug', '0.2.2'
+  mb_debug_module_pod 'MBFileTransferLibDebug', '0.1.5'
+  mb_debug_module_pod 'MBWebViewDebug', '0.2.0'
+  mb_debug_module_pod 'YMMUserModuleServiceDebug', '0.1.11'
+  mb_debug_module_pod 'MBRouterDebug', '1.3.0'
+  mb_debug_module_pod 'YMMNetworkDebug', '0.6.0'
+  mb_debug_module_pod 'MBMarioDebug', '1.3.3'
+  mb_debug_module_pod 'YMMExprDebug', '0.1.5'
+  mb_debug_module_pod 'MBUIKitDebug', '1.1.1'
+  mb_debug_module_pod 'MBXarDebug', '0.2.7.2'
+  mb_debug_module_pod 'MBCommonUILibDebug', '0.2.2'
+  mb_debug_module_pod 'MBShareDebug', '0.2.1'
+  mb_debug_module_pod 'MBBridgeLibDebug', '0.4.3'
+  mb_debug_module_pod 'MBStorageLibDebug', '0.1.7'
+
+end
+
+abstract_target 'abstract_pod' do
+  # 三方库有的模块可以写在这三个方法里
+  thirdparty
+
+  # 只有运满满司机端用的模块
+  target 'GasStationBiz' do
+    mbbasic
+    mbbiz
+    mbdebug_pods
+    pod 'MBPermission', '2.0.6', :subspecs => ['common', 'basic', 'notification', 'camera', 'photos', 'contacts', 'location', 'microphone', 'tracking', 'calendar']
+  end
+end
+
+# false依赖远程产物，远程分支通过FLUTTER_APP_BRANCH字段设置，同时通过分支区分模拟器or真机
+# true通过本地代码实时编译，需要本地安装flutterSDK，本地路径通过FLUTTER_APP_PATH字段设置，支持模拟器+真机
+FLUTTER_DEBUG_APP=false
+
+# 是否从远程更新最新产物
+FLUTTER_NEED_UPDATE=true
+
+#  https://code.amh-group.com/iOSYmm/MBFlutterFrameworks/
+# debug模式下，分支格式’flutter_0114_Debug‘，支持模拟器+真机，同时支持hot reload + hot restart
+# release模式下，分支格式’flutter_0114‘，支持真机，用于线上发布
+FLUTTER_APP_BRANCH="feature/sjw" 
+
+# 仅当FLUTTER_DEBUG_APP为true时有效，本地flutter宿主路径，仓库地址为’git@code.amh-group.com:MBFrontend/Flutter/mbflutter_host.git‘
+FLUTTER_APP_PATH='mbflutter_host本地路径'
+
+flutter_application_path = File.join('./.scripts', 'flutterhelper.rb')
+eval(File.read(flutter_application_path), binding)
+
+motify_xcode15_ld_classic = File.join('./.scripts', 'motify_xcode15_ld_classic.sh')
+`arch -x86_64 bash -x #{motify_xcode15_ld_classic}`
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+      config.build_settings["DEVELOPMENT_TEAM"] = "LJTDBM4U3C"
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      config.build_settings['VALID_ARCHS'] = "arm64 arm64e x86_64"
+      config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+      config.build_settings['CLANG_WARN_DOCUMENTATION_COMMENTS'] = 'NO' # 关闭文档检查
+      config.build_settings['CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED'] = 'NO' #关闭本地化检查
+      config.build_settings['OTHER_CPLUSPLUSFLAGS'] = ["$(OTHER_CFLAGS)", "-fcxx-modules"] #c++支持@import
+      if config.name == 'AdHoc' || config.name == 'Debug'
+        config.build_settings['OTHER_SWIFT_FLAGS'] = ['$(inherited)', '-D', 'DEBUG']
+        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = ['$(inherited)', 'DEBUG=1']
+      end
+    end
+    if target.respond_to?(:product_type) and target.product_type == "com.apple.product-type.bundle" # <--- this
+      target.build_configurations.each do |config|
+          config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+      end
+    end
+  end
+end
+
+
+
+

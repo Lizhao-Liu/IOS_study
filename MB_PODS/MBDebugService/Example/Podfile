@@ -1,0 +1,18 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@code.ymmoa.com:iOSYmm/MBSpecRepo.git'  #YMM&HCB共有私库
+source 'git@code.ymmoa.com:iOSYmm/YMMSpecRepo.git'  #YMM私库源
+source 'git@code.ymmoa.com:iOS-Team/HCBSpecs.git'         # HCB私库源
+source 'git@code.ymmoa.com:iOSYmm/mb-binary-specrepo.git'
+
+platform :ios, '8.0'
+
+target 'MBDebugService_Example' do
+  pod 'MBDebugService', :path => '../'
+  pod 'YMMModuleLib', '0.3.2' # 模块基础库
+  pod 'YMMLaunchTaskLib', '0.1.1-SDK' #启动任务库
+
+  target 'MBDebugService_Tests' do
+    inherit! :search_paths
+    
+  end
+end

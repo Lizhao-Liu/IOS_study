@@ -1,0 +1,72 @@
+PODS:
+  - MBBuildPreLib (0.1.0)
+  - MBFoundation (0.4.5):
+    - MBFoundation/Algorithm (= 0.4.5)
+    - MBFoundation/Collection (= 0.4.5)
+    - MBFoundation/ContactsKit (= 0.4.5)
+    - MBFoundation/CoreTelephonyKit (= 0.4.5)
+    - MBFoundation/Extensions (= 0.4.5)
+    - MBFoundation/Global (= 0.4.5)
+    - MBFoundation/HTMLParser (= 0.4.5)
+    - MBFoundation/ManagerCenter (= 0.4.5)
+    - MBFoundation/OpenUDID (= 0.4.5)
+    - MBFoundation/Protocols (= 0.4.5)
+    - MBFoundation/SafeExtensions (= 0.4.5)
+    - MBFoundation/SwiftyJSON (= 0.4.5)
+    - MBFoundation/ToolKit (= 0.4.5)
+    - MBFoundation/Util (= 0.4.5)
+  - MBFoundation/Algorithm (0.4.5)
+  - MBFoundation/Collection (0.4.5)
+  - MBFoundation/ContactsKit (0.4.5)
+  - MBFoundation/CoreTelephonyKit (0.4.5)
+  - MBFoundation/Extensions (0.4.5):
+    - MBFoundation/Algorithm
+    - MBFoundation/Global
+    - MBFoundation/ToolKit
+  - MBFoundation/Global (0.4.5)
+  - MBFoundation/HTMLParser (0.4.5)
+  - MBFoundation/ManagerCenter (0.4.5)
+  - MBFoundation/OpenUDID (0.4.5)
+  - MBFoundation/Protocols (0.4.5)
+  - MBFoundation/SafeExtensions (0.4.5):
+    - MBFoundation/Util
+  - MBFoundation/SwiftyJSON (0.4.5)
+  - MBFoundation/ToolKit (0.4.5):
+    - Reachability
+  - MBFoundation/Util (0.4.5)
+  - Reachability (3.5.1)
+  - YMMModuleLib (0.17.1):
+    - MBBuildPreLib
+    - MBFoundation (~> 0.3)
+    - YMMRouterLib (~> 0.25)
+  - YMMRouterLib (0.33.1):
+    - YMMRouterLib/RouterIntent (= 0.33.1)
+    - YMMRouterLib/RouterMatch (= 0.33.1)
+  - YMMRouterLib/RouterIntent (0.33.1)
+  - YMMRouterLib/RouterMatch (0.33.1)
+
+DEPENDENCIES:
+  - YMMModuleLib (from `../`)
+
+SPEC REPOS:
+  "git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git":
+    - Reachability
+  "git@code.amh-group.com:iOSYmm/mb-specrepo.git":
+    - MBBuildPreLib
+    - MBFoundation
+    - YMMRouterLib
+
+EXTERNAL SOURCES:
+  YMMModuleLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBBuildPreLib: 36a01262ed4792afec163c1420bed0c60c3d6b08
+  MBFoundation: 9b3160a85a2d2d06e4cec71d60a9f2499b66f849
+  Reachability: e892c2ce59bd658961b181a0895af4ce7216c260
+  YMMModuleLib: 651510b897f8a3d62278b434a14d20f2ad3d0cf5
+  YMMRouterLib: e6fa96ad5f39ac030bb3a1bc35f925c8488b3b3f
+
+PODFILE CHECKSUM: 9f2f0a73e372bbecb13f2a52479fefe03416c399
+
+COCOAPODS: 1.11.3

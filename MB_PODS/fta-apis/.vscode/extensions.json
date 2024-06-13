@@ -1,0 +1,4 @@
+{
+  "recommendations": ["kkaaddff.fta-workstation", "editorconfig.editorconfig", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "stylelint.vscode-stylelint"],
+  "unwantedRecommendations": ["rvest.vs-code-prettier-eslint"]
+}

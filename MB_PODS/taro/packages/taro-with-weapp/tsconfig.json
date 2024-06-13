@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.root.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "preserveConstEnums": true,
+    "sourceMap": true
+  },
+  "include": [
+    "./src"
+  ]
+}

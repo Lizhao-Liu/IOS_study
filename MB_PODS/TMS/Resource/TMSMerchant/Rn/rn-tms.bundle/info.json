@@ -1,0 +1,35 @@
+{
+    "name": "tms",
+    "version": "1.15.141.28",
+    "author": "1023295",
+    "packageType": "jsbundle",
+    "packageContent": {},
+    "builder": "1023295",
+    "buildeDate": "2023-05-15 20:05:18",
+    "buildeMachine": "dev.op.jenkins.build-01.njfh",
+    "git": {
+        "branch": "v115/release/0517/static",
+        "tag": "",
+        "commit": "673a8d8eaa42b2873eec2d98108a19c95ddb105d",
+        "log": [
+            {
+                "commit": "673a8d8eaa42b2873eec2d98108a19c95ddb105d",
+                "author": "huxiang",
+                "date": "Wed May 10 17:23:00 2023 +0800",
+                "comment": "fix version'"
+            },
+            {
+                "commit": "fc2cc9d9881d9cf74fe2b3aa2e406a08aeca2555",
+                "author": "huxiang",
+                "date": "Wed May 10 15:42:39 2023 +0800",
+                "comment": "隐私政策新页面"
+            },
+            {
+                "commit": "d2e38fe629848f8e60486ff6b67a40c96a695f32",
+                "author": "xiang.hu",
+                "date": "Wed May 10 14:44:27 2023 +0800",
+                "comment": "Merge branch 'v114/release/0427/dynamic' into 'master'"
+            }
+        ]
+    }
+}

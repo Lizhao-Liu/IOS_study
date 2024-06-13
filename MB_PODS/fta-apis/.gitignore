@@ -1,0 +1,43 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+*/**/node_modules
+yarn-error.log
+/npm-debug.log*
+/package-lock.json
+
+# production
+dist
+dist-*
+lib
+/dist
+docs-dist
+deploy-prod
+deploy-dev
+deploy-beta
+
+# misc
+.DS_Store
+
+# umi
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production
+.umi
+.umi-production
+.umi-test
+.env.local
+taro-tmp
+
+# ide
+# /.vscode
+/.idea
+
+
+ios
+android
+
+.stat.json
+
+lerna-debug.*

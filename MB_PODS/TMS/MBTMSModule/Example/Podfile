@@ -1,0 +1,16 @@
+source 'git@code.amh-group.com:iOSYmm/mb-specrepo.git'
+source 'git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git'  # 满帮内网第三方库
+
+
+platform :ios, '10.0'
+
+#use_frameworks!
+#inhibit_all_warnings!
+use_modular_headers!
+
+target 'TMSBaseModule-Example' do
+  pod 'TMSBaseModule', :path => '../'
+  
+  
+end
+

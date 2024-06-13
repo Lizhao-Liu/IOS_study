@@ -1,0 +1,1231 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3435FD09263697EE001DEA4F /* driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FD08263697EE001DEA4F /* driver.swift */; };
+		4B9F4DCF1EF7A489BD012558 /* libPods-abstract_pod-TMSDriver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 829EA3CA6BD9DED0D711BC85 /* libPods-abstract_pod-TMSDriver.a */; };
+		840AD7A22B5FA5E200A626BB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840AD7A12B5FA5E200A626BB /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		847201472B9FF62C00F8F9CC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 847201462B9FF62B00F8F9CC /* PrivacyInfo.xcprivacy */; };
+		84C87DBC2B8C351B002E9EC7 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C87DBB2B8C351B002E9EC7 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8BBEE2566F5C5710C563D0B3 /* libPods-abstract_pod-TMSMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F72E3A1A0763065A3DC6A9 /* libPods-abstract_pod-TMSMerchant.a */; };
+		AD0D31F326311BBF00E7EC95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0D31F226311BBF00E7EC95 /* main.m */; };
+		AD1E91A826443B0300E97744 /* LaunchDriver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1E91A726443B0300E97744 /* LaunchDriver.storyboard */; };
+		AD6829382637B0F9000CE61B /* DriverAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6829372637B0F9000CE61B /* DriverAssets.xcassets */; };
+		AD91319D266092A200FB857C /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD91319C266092A200FB857C /* ExternalAccessory.framework */; };
+		ADBA8D722646E591000EF597 /* MerchantAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBA8D712646E591000EF597 /* MerchantAssets.xcassets */; };
+		ADBA8D752646E591000EF597 /* LaunchMerchant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBA8D732646E591000EF597 /* LaunchMerchant.storyboard */; };
+		ADBA8D782646E591000EF597 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA8D772646E591000EF597 /* main.m */; };
+		ADE26A272646E80D00EEAB5A /* merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE26A262646E80D00EEAB5A /* merchant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08B886442640DEF45092EC5C /* Pods-TMSDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSDriver.release.xcconfig"; path = "Target Support Files/Pods-TMSDriver/Pods-TMSDriver.release.xcconfig"; sourceTree = "<group>"; };
+		1AEBA30726E86A48F3D0CBAB /* Pods-abstract_pod-TMSMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSMerchant.release.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant.release.xcconfig"; sourceTree = "<group>"; };
+		1B81905B920C67A19AE13850 /* Pods-TMSDriver.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSDriver.adhoc.xcconfig"; path = "Target Support Files/Pods-TMSDriver/Pods-TMSDriver.adhoc.xcconfig"; sourceTree = "<group>"; };
+		1E289EF52AD8E7F9B055CD80 /* Pods-TMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMS.debug.xcconfig"; path = "Target Support Files/Pods-TMS/Pods-TMS.debug.xcconfig"; sourceTree = "<group>"; };
+		2FB427E64F728E4647A6D734 /* Pods-abstract_pod-TMSDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSDriver.debug.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver.debug.xcconfig"; sourceTree = "<group>"; };
+		3435FD07263697EC001DEA4F /* TMSDriver-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMSDriver-Bridging-Header.h"; sourceTree = "<group>"; };
+		3435FD08263697EE001DEA4F /* driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = driver.swift; sourceTree = "<group>"; };
+		348385DBC03BD18F0A0E329D /* Pods-abstract_pod-TMSDriver.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSDriver.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig"; sourceTree = "<group>"; };
+		3C400876591870E5C8864533 /* Pods-TMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMS.release.xcconfig"; path = "Target Support Files/Pods-TMS/Pods-TMS.release.xcconfig"; sourceTree = "<group>"; };
+		3CEE946B3EC49AFFD043E29F /* Pods-abstract_pod-TMSMerchant.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSMerchant.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig"; sourceTree = "<group>"; };
+		453626D2D625731C0A277C39 /* Pods-TMSMerchant.debug_ljtdbm4u3c_chengduyunli.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSMerchant.debug_ljtdbm4u3c_chengduyunli.xcconfig"; path = "Target Support Files/Pods-TMSMerchant/Pods-TMSMerchant.debug_ljtdbm4u3c_chengduyunli.xcconfig"; sourceTree = "<group>"; };
+		468B0DB8D9F91C86FAF39925 /* Pods-TMSMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSMerchant.release.xcconfig"; path = "Target Support Files/Pods-TMSMerchant/Pods-TMSMerchant.release.xcconfig"; sourceTree = "<group>"; };
+		5E0973B047FAFF046EBB70DB /* Pods-TMSMerchant.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSMerchant.adhoc.xcconfig"; path = "Target Support Files/Pods-TMSMerchant/Pods-TMSMerchant.adhoc.xcconfig"; sourceTree = "<group>"; };
+		6AB22BCA2CD579D8C462DF0E /* Pods-TMSMerchant.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSMerchant.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig"; path = "Target Support Files/Pods-TMSMerchant/Pods-TMSMerchant.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig"; sourceTree = "<group>"; };
+		6F452CE62A7218670DF264D5 /* Pods-TMSMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSMerchant.debug.xcconfig"; path = "Target Support Files/Pods-TMSMerchant/Pods-TMSMerchant.debug.xcconfig"; sourceTree = "<group>"; };
+		72E231D1B3AC08DBBDE80E2A /* Pods-abstract_pod-TMSDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSDriver.release.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver.release.xcconfig"; sourceTree = "<group>"; };
+		829EA3CA6BD9DED0D711BC85 /* libPods-abstract_pod-TMSDriver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-abstract_pod-TMSDriver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840AD7A12B5FA5E200A626BB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		847201462B9FF62B00F8F9CC /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		84C87DBB2B8C351B002E9EC7 /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		96F72E3A1A0763065A3DC6A9 /* libPods-abstract_pod-TMSMerchant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-abstract_pod-TMSMerchant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D65327CF3641B00FDAF8823 /* Pods-abstract_pod-TMSMerchant.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSMerchant.adhoc.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant.adhoc.xcconfig"; sourceTree = "<group>"; };
+		A974ECEDB4B98B9C826E5530 /* Pods-TMSMerchant.debug_33nty77js5_guiyanghuochebang.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSMerchant.debug_33nty77js5_guiyanghuochebang.xcconfig"; path = "Target Support Files/Pods-TMSMerchant/Pods-TMSMerchant.debug_33nty77js5_guiyanghuochebang.xcconfig"; sourceTree = "<group>"; };
+		AD0D31DE26311BBE00E7EC95 /* TMSDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMSDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0D31F126311BBF00E7EC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0D31F226311BBF00E7EC95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD1E91A726443B0300E97744 /* LaunchDriver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchDriver.storyboard; sourceTree = "<group>"; };
+		AD6829372637B0F9000CE61B /* DriverAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DriverAssets.xcassets; sourceTree = "<group>"; };
+		AD91319A2660925200FB857C /* TMSMerchantDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TMSMerchantDebug.entitlements; sourceTree = "<group>"; };
+		AD91319B2660926D00FB857C /* TMSMerchantRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TMSMerchantRelease.entitlements; sourceTree = "<group>"; };
+		AD91319C266092A200FB857C /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		ADBA8D632646E590000EF597 /* TMSMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMSMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBA8D712646E591000EF597 /* MerchantAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MerchantAssets.xcassets; sourceTree = "<group>"; };
+		ADBA8D742646E591000EF597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchMerchant.storyboard; sourceTree = "<group>"; };
+		ADBA8D762646E591000EF597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBA8D772646E591000EF597 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADE26A252646E80D00EEAB5A /* TMSMerchant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMSMerchant-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADE26A262646E80D00EEAB5A /* merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchant.swift; sourceTree = "<group>"; };
+		B3534EA8D6E2BCAD8A8A2198 /* Pods-abstract_pod-TMSDriver.debug_33nty77js5_guiyanghuochebang.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSDriver.debug_33nty77js5_guiyanghuochebang.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver.debug_33nty77js5_guiyanghuochebang.xcconfig"; sourceTree = "<group>"; };
+		BB601D693C29066C50A81C65 /* Pods-TMSDriver.debug_ljtdbm4u3c_chengduyunli.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSDriver.debug_ljtdbm4u3c_chengduyunli.xcconfig"; path = "Target Support Files/Pods-TMSDriver/Pods-TMSDriver.debug_ljtdbm4u3c_chengduyunli.xcconfig"; sourceTree = "<group>"; };
+		BC43D6858DA98EC0B82C777A /* Pods-abstract_pod-TMSMerchant.debug_33nty77js5_guiyanghuochebang.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSMerchant.debug_33nty77js5_guiyanghuochebang.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant.debug_33nty77js5_guiyanghuochebang.xcconfig"; sourceTree = "<group>"; };
+		BFFAB47D9E189967B6472B83 /* libPods-TMS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1BF0AA1A8C847D2E6692089 /* Pods-TMSDriver.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSDriver.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig"; path = "Target Support Files/Pods-TMSDriver/Pods-TMSDriver.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig"; sourceTree = "<group>"; };
+		C3ECD13AFEB2818640B65A42 /* Pods-abstract_pod-TMSMerchant.debug_ljtdbm4u3c_chengduyunli.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSMerchant.debug_ljtdbm4u3c_chengduyunli.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant.debug_ljtdbm4u3c_chengduyunli.xcconfig"; sourceTree = "<group>"; };
+		C49A6D96AF3C89A8283F0B29 /* Pods-abstract_pod-TMSMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSMerchant.debug.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant.debug.xcconfig"; sourceTree = "<group>"; };
+		D8DF1869639D3E1FFD68D2B6 /* Pods-TMSDriver.debug_33nty77js5_guiyanghuochebang.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSDriver.debug_33nty77js5_guiyanghuochebang.xcconfig"; path = "Target Support Files/Pods-TMSDriver/Pods-TMSDriver.debug_33nty77js5_guiyanghuochebang.xcconfig"; sourceTree = "<group>"; };
+		E06E363CBA85C62F365EDC78 /* Pods-abstract_pod-TMSDriver.debug_ljtdbm4u3c_chengduyunli.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSDriver.debug_ljtdbm4u3c_chengduyunli.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver.debug_ljtdbm4u3c_chengduyunli.xcconfig"; sourceTree = "<group>"; };
+		E22EE6201BE300363937C21C /* Pods-TMSDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSDriver.debug.xcconfig"; path = "Target Support Files/Pods-TMSDriver/Pods-TMSDriver.debug.xcconfig"; sourceTree = "<group>"; };
+		E2C029D8291114CD008D525E /* Debug_LJTDBM4U3C_ChengduYunli.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Debug_LJTDBM4U3C_ChengduYunli.entitlements; sourceTree = "<group>"; };
+		E2C029D9291114CD008D525E /* Debug_27D27NC4P5_ShanghaiYunzhanggui.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Debug_27D27NC4P5_ShanghaiYunzhanggui.entitlements; sourceTree = "<group>"; };
+		E2C029DA291114CD008D525E /* TMSMerchantAdHoc.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TMSMerchantAdHoc.entitlements; sourceTree = "<group>"; };
+		E2C029DB291115C0008D525E /* Debug_33NTY77JS5_GuiyangHuochebang.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Debug_33NTY77JS5_GuiyangHuochebang.entitlements; sourceTree = "<group>"; };
+		E2CC7A10908F5571C7CD25B6 /* Pods-TMSMerchant.enterprisedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSMerchant.enterprisedebug.xcconfig"; path = "Target Support Files/Pods-TMSMerchant/Pods-TMSMerchant.enterprisedebug.xcconfig"; sourceTree = "<group>"; };
+		E81775EC1CF78DC300DEE321 /* Pods-abstract_pod-TMSDriver.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abstract_pod-TMSDriver.adhoc.xcconfig"; path = "Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver.adhoc.xcconfig"; sourceTree = "<group>"; };
+		FFAC6B9303AD78D349A09CA3 /* Pods-TMSDriver.enterprisedebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSDriver.enterprisedebug.xcconfig"; path = "Target Support Files/Pods-TMSDriver/Pods-TMSDriver.enterprisedebug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD0D31DB26311BBE00E7EC95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9F4DCF1EF7A489BD012558 /* libPods-abstract_pod-TMSDriver.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBA8D602646E590000EF597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C87DBC2B8C351B002E9EC7 /* AdServices.framework in Frameworks */,
+				840AD7A22B5FA5E200A626BB /* SwiftUI.framework in Frameworks */,
+				AD91319D266092A200FB857C /* ExternalAccessory.framework in Frameworks */,
+				8BBEE2566F5C5710C563D0B3 /* libPods-abstract_pod-TMSMerchant.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AE12F0CA58F91129E326FA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84C87DBB2B8C351B002E9EC7 /* AdServices.framework */,
+				840AD7A12B5FA5E200A626BB /* SwiftUI.framework */,
+				AD91319C266092A200FB857C /* ExternalAccessory.framework */,
+				BFFAB47D9E189967B6472B83 /* libPods-TMS.a */,
+				829EA3CA6BD9DED0D711BC85 /* libPods-abstract_pod-TMSDriver.a */,
+				96F72E3A1A0763065A3DC6A9 /* libPods-abstract_pod-TMSMerchant.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8130A45894255929FD82D9A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E289EF52AD8E7F9B055CD80 /* Pods-TMS.debug.xcconfig */,
+				3C400876591870E5C8864533 /* Pods-TMS.release.xcconfig */,
+				E22EE6201BE300363937C21C /* Pods-TMSDriver.debug.xcconfig */,
+				08B886442640DEF45092EC5C /* Pods-TMSDriver.release.xcconfig */,
+				6F452CE62A7218670DF264D5 /* Pods-TMSMerchant.debug.xcconfig */,
+				468B0DB8D9F91C86FAF39925 /* Pods-TMSMerchant.release.xcconfig */,
+				FFAC6B9303AD78D349A09CA3 /* Pods-TMSDriver.enterprisedebug.xcconfig */,
+				E2CC7A10908F5571C7CD25B6 /* Pods-TMSMerchant.enterprisedebug.xcconfig */,
+				1B81905B920C67A19AE13850 /* Pods-TMSDriver.adhoc.xcconfig */,
+				C1BF0AA1A8C847D2E6692089 /* Pods-TMSDriver.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */,
+				BB601D693C29066C50A81C65 /* Pods-TMSDriver.debug_ljtdbm4u3c_chengduyunli.xcconfig */,
+				D8DF1869639D3E1FFD68D2B6 /* Pods-TMSDriver.debug_33nty77js5_guiyanghuochebang.xcconfig */,
+				5E0973B047FAFF046EBB70DB /* Pods-TMSMerchant.adhoc.xcconfig */,
+				6AB22BCA2CD579D8C462DF0E /* Pods-TMSMerchant.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */,
+				453626D2D625731C0A277C39 /* Pods-TMSMerchant.debug_ljtdbm4u3c_chengduyunli.xcconfig */,
+				A974ECEDB4B98B9C826E5530 /* Pods-TMSMerchant.debug_33nty77js5_guiyanghuochebang.xcconfig */,
+				2FB427E64F728E4647A6D734 /* Pods-abstract_pod-TMSDriver.debug.xcconfig */,
+				E81775EC1CF78DC300DEE321 /* Pods-abstract_pod-TMSDriver.adhoc.xcconfig */,
+				348385DBC03BD18F0A0E329D /* Pods-abstract_pod-TMSDriver.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */,
+				E06E363CBA85C62F365EDC78 /* Pods-abstract_pod-TMSDriver.debug_ljtdbm4u3c_chengduyunli.xcconfig */,
+				B3534EA8D6E2BCAD8A8A2198 /* Pods-abstract_pod-TMSDriver.debug_33nty77js5_guiyanghuochebang.xcconfig */,
+				72E231D1B3AC08DBBDE80E2A /* Pods-abstract_pod-TMSDriver.release.xcconfig */,
+				C49A6D96AF3C89A8283F0B29 /* Pods-abstract_pod-TMSMerchant.debug.xcconfig */,
+				9D65327CF3641B00FDAF8823 /* Pods-abstract_pod-TMSMerchant.adhoc.xcconfig */,
+				3CEE946B3EC49AFFD043E29F /* Pods-abstract_pod-TMSMerchant.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */,
+				C3ECD13AFEB2818640B65A42 /* Pods-abstract_pod-TMSMerchant.debug_ljtdbm4u3c_chengduyunli.xcconfig */,
+				BC43D6858DA98EC0B82C777A /* Pods-abstract_pod-TMSMerchant.debug_33nty77js5_guiyanghuochebang.xcconfig */,
+				1AEBA30726E86A48F3D0CBAB /* Pods-abstract_pod-TMSMerchant.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD0D315B263119F600E7EC95 = {
+			isa = PBXGroup;
+			children = (
+				AD0D31DF26311BBE00E7EC95 /* TMSDriver */,
+				ADBA8D642646E590000EF597 /* TMSMerchant */,
+				AD0D3165263119F600E7EC95 /* Products */,
+				8130A45894255929FD82D9A0 /* Pods */,
+				1AE12F0CA58F91129E326FA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD0D3165263119F600E7EC95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD0D31DE26311BBE00E7EC95 /* TMSDriver.app */,
+				ADBA8D632646E590000EF597 /* TMSMerchant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD0D31DF26311BBE00E7EC95 /* TMSDriver */ = {
+			isa = PBXGroup;
+			children = (
+				AD6829372637B0F9000CE61B /* DriverAssets.xcassets */,
+				AD0D31F126311BBF00E7EC95 /* Info.plist */,
+				3435FD08263697EE001DEA4F /* driver.swift */,
+				AD0D31F226311BBF00E7EC95 /* main.m */,
+				3435FD07263697EC001DEA4F /* TMSDriver-Bridging-Header.h */,
+				AD1E91A726443B0300E97744 /* LaunchDriver.storyboard */,
+			);
+			path = TMSDriver;
+			sourceTree = "<group>";
+		};
+		ADBA8D642646E590000EF597 /* TMSMerchant */ = {
+			isa = PBXGroup;
+			children = (
+				E2C029DB291115C0008D525E /* Debug_33NTY77JS5_GuiyangHuochebang.entitlements */,
+				E2C029D8291114CD008D525E /* Debug_LJTDBM4U3C_ChengduYunli.entitlements */,
+				E2C029D9291114CD008D525E /* Debug_27D27NC4P5_ShanghaiYunzhanggui.entitlements */,
+				E2C029DA291114CD008D525E /* TMSMerchantAdHoc.entitlements */,
+				AD91319B2660926D00FB857C /* TMSMerchantRelease.entitlements */,
+				AD91319A2660925200FB857C /* TMSMerchantDebug.entitlements */,
+				ADBA8D712646E591000EF597 /* MerchantAssets.xcassets */,
+				ADBA8D732646E591000EF597 /* LaunchMerchant.storyboard */,
+				847201462B9FF62B00F8F9CC /* PrivacyInfo.xcprivacy */,
+				ADBA8D762646E591000EF597 /* Info.plist */,
+				ADBA8D772646E591000EF597 /* main.m */,
+				ADE26A262646E80D00EEAB5A /* merchant.swift */,
+				ADE26A252646E80D00EEAB5A /* TMSMerchant-Bridging-Header.h */,
+			);
+			path = TMSMerchant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD0D31DD26311BBE00E7EC95 /* TMSDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD0D31F426311BBF00E7EC95 /* Build configuration list for PBXNativeTarget "TMSDriver" */;
+			buildPhases = (
+				1387CCCF6ECB89257FFD43BA /* [CP] Check Pods Manifest.lock */,
+				AD0D31DA26311BBE00E7EC95 /* Sources */,
+				AD0D31DB26311BBE00E7EC95 /* Frameworks */,
+				AD0D31DC26311BBE00E7EC95 /* Resources */,
+				9735A9D40B03BB0B3CCF5F67 /* [CP] Copy Pods Resources */,
+				2D02BC76D1898462989E3E1A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMSDriver;
+			productName = TMSDriver;
+			productReference = AD0D31DE26311BBE00E7EC95 /* TMSDriver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADBA8D622646E590000EF597 /* TMSMerchant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBA8D792646E591000EF597 /* Build configuration list for PBXNativeTarget "TMSMerchant" */;
+			buildPhases = (
+				B686CA836CA31015D9A5BA97 /* [CP] Check Pods Manifest.lock */,
+				ADBA8D5F2646E590000EF597 /* Sources */,
+				ADBA8D602646E590000EF597 /* Frameworks */,
+				ADBA8D612646E590000EF597 /* Resources */,
+				320778AC968FA751FA921A74 /* [CP] Copy Pods Resources */,
+				46012372D011B0EFA369C278 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMSMerchant;
+			productName = TMSMerchant;
+			productReference = ADBA8D632646E590000EF597 /* TMSMerchant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD0D315C263119F600E7EC95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AD0D31DD26311BBE00E7EC95 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					ADBA8D622646E590000EF597 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = AD0D315F263119F600E7EC95 /* Build configuration list for PBXProject "TMS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD0D315B263119F600E7EC95;
+			productRefGroup = AD0D3165263119F600E7EC95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD0D31DD26311BBE00E7EC95 /* TMSDriver */,
+				ADBA8D622646E590000EF597 /* TMSMerchant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD0D31DC26311BBE00E7EC95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1E91A826443B0300E97744 /* LaunchDriver.storyboard in Resources */,
+				AD6829382637B0F9000CE61B /* DriverAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBA8D612646E590000EF597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847201472B9FF62C00F8F9CC /* PrivacyInfo.xcprivacy in Resources */,
+				ADBA8D752646E591000EF597 /* LaunchMerchant.storyboard in Resources */,
+				ADBA8D722646E591000EF597 /* MerchantAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1387CCCF6ECB89257FFD43BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-abstract_pod-TMSDriver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D02BC76D1898462989E3E1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		320778AC968FA751FA921A74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46012372D011B0EFA369C278 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSMerchant/Pods-abstract_pod-TMSMerchant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9735A9D40B03BB0B3CCF5F67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-abstract_pod-TMSDriver/Pods-abstract_pod-TMSDriver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B686CA836CA31015D9A5BA97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-abstract_pod-TMSMerchant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD0D31DA26311BBE00E7EC95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3435FD09263697EE001DEA4F /* driver.swift in Sources */,
+				AD0D31F326311BBF00E7EC95 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBA8D5F2646E590000EF597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBA8D782646E591000EF597 /* main.m in Sources */,
+				ADE26A272646E80D00EEAB5A /* merchant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADBA8D732646E591000EF597 /* LaunchMerchant.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADBA8D742646E591000EF597 /* Base */,
+			);
+			name = LaunchMerchant.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD0D317B263119F800E7EC95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ld_classic";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD0D317C263119F800E7EC95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ld_classic";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD0D31F526311BBF00E7EC95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB427E64F728E4647A6D734 /* Pods-abstract_pod-TMSDriver.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27D27NC4P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tms8.driver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSDriver/TMSDriver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Debug;
+		};
+		AD0D31F626311BBF00E7EC95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72E231D1B3AC08DBBDE80E2A /* Pods-abstract_pod-TMSDriver.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27D27NC4P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tms8.driver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSDriver/TMSDriver-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Release;
+		};
+		ADBA8D7A2646E591000EF597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49A6D96AF3C89A8283F0B29 /* Pods-abstract_pod-TMSMerchant.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TMSMerchant/TMSMerchantDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=*]" = 27D27NC4P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tms8.merchant.enterprise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = tms_new_inhouse;
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSMerchant/TMSMerchant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Debug;
+		};
+		ADBA8D7B2646E591000EF597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AEBA30726E86A48F3D0CBAB /* Pods-abstract_pod-TMSMerchant.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TMSMerchant/TMSMerchantRelease.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 27D27NC4P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tms8.merchant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = tms_profile_distribution_appstore;
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSMerchant/TMSMerchant-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Release;
+		};
+		E2695DC1290B6C9600FBCEC5 /* Debug_33NTY77JS5_GuiyangHuochebang */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ld_classic";
+				SDKROOT = iphoneos;
+			};
+			name = Debug_33NTY77JS5_GuiyangHuochebang;
+		};
+		E2695DC2290B6C9600FBCEC5 /* Debug_33NTY77JS5_GuiyangHuochebang */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3534EA8D6E2BCAD8A8A2198 /* Pods-abstract_pod-TMSDriver.debug_33nty77js5_guiyanghuochebang.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27D27NC4P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tms8.driver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSDriver/TMSDriver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Debug_33NTY77JS5_GuiyangHuochebang;
+		};
+		E2695DC3290B6C9600FBCEC5 /* Debug_33NTY77JS5_GuiyangHuochebang */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC43D6858DA98EC0B82C777A /* Pods-abstract_pod-TMSMerchant.debug_33nty77js5_guiyanghuochebang.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TMSMerchant/Debug_33NTY77JS5_GuiyangHuochebang.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=*]" = 33NTY77JS5;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 33NTY77JS5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amh.tmsmerchant.33NTY77JS5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "com.amh.tmsmerchant.33NTY77JS5 AdHoc";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.amh.tmsmerchant.33NTY77JS5 Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSMerchant/TMSMerchant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Debug_33NTY77JS5_GuiyangHuochebang;
+		};
+		E2695DC4290B6CC700FBCEC5 /* Debug_LJTDBM4U3C_ChengduYunli */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ld_classic";
+				SDKROOT = iphoneos;
+			};
+			name = Debug_LJTDBM4U3C_ChengduYunli;
+		};
+		E2695DC5290B6CC700FBCEC5 /* Debug_LJTDBM4U3C_ChengduYunli */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06E363CBA85C62F365EDC78 /* Pods-abstract_pod-TMSDriver.debug_ljtdbm4u3c_chengduyunli.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27D27NC4P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tms8.driver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSDriver/TMSDriver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Debug_LJTDBM4U3C_ChengduYunli;
+		};
+		E2695DC6290B6CC700FBCEC5 /* Debug_LJTDBM4U3C_ChengduYunli */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3ECD13AFEB2818640B65A42 /* Pods-abstract_pod-TMSMerchant.debug_ljtdbm4u3c_chengduyunli.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TMSMerchant/Debug_LJTDBM4U3C_ChengduYunli.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=*]" = LJTDBM4U3C;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LJTDBM4U3C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amh.tmsmerchant.LJTDBM4U3C;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "com.amh.tmsmerchant.LJTDBM4U3C AdHoc";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.amh.tmsmerchant.LJTDBM4U3C Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSMerchant/TMSMerchant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Debug_LJTDBM4U3C_ChengduYunli;
+		};
+		E2695DC7290B6CD600FBCEC5 /* Debug_27D27NC4P5_ShanghaiYunzhanggui */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ld_classic";
+				SDKROOT = iphoneos;
+			};
+			name = Debug_27D27NC4P5_ShanghaiYunzhanggui;
+		};
+		E2695DC8290B6CD600FBCEC5 /* Debug_27D27NC4P5_ShanghaiYunzhanggui */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 348385DBC03BD18F0A0E329D /* Pods-abstract_pod-TMSDriver.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27D27NC4P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tms8.driver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSDriver/TMSDriver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Debug_27D27NC4P5_ShanghaiYunzhanggui;
+		};
+		E2695DC9290B6CD600FBCEC5 /* Debug_27D27NC4P5_ShanghaiYunzhanggui */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEE946B3EC49AFFD043E29F /* Pods-abstract_pod-TMSMerchant.debug_27d27nc4p5_shanghaiyunzhanggui.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TMSMerchant/Debug_27D27NC4P5_ShanghaiYunzhanggui.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=*]" = 27D27NC4P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amh.tmsmerchant.27D27NC4P5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "com.amh.tmsmerchant.27D27NC4P5 AdHoc";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSMerchant/TMSMerchant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = Debug_27D27NC4P5_ShanghaiYunzhanggui;
+		};
+		E2D9C2C5290BBC0800D08B50 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ld_classic";
+				SDKROOT = iphoneos;
+			};
+			name = AdHoc;
+		};
+		E2D9C2C6290BBC0800D08B50 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E81775EC1CF78DC300DEE321 /* Pods-abstract_pod-TMSDriver.adhoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27D27NC4P5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSDriver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tms8.driver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSDriver/TMSDriver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = AdHoc;
+		};
+		E2D9C2C7290BBC0800D08B50 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D65327CF3641B00FDAF8823 /* Pods-abstract_pod-TMSMerchant.adhoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TMSMerchant/TMSMerchantAdHoc.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 33NTY77JS5;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 33NTY77JS5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TMSMerchant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amh.tmsmerchant.33NTY77JS5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "com.amh.tmsmerchant.33NTY77JS5 AdHoc";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.amh.tmsmerchant.33NTY77JS5 Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMSMerchant/TMSMerchant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 arm64e x86_64";
+			};
+			name = AdHoc;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD0D315F263119F600E7EC95 /* Build configuration list for PBXProject "TMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0D317B263119F800E7EC95 /* Debug */,
+				E2D9C2C5290BBC0800D08B50 /* AdHoc */,
+				E2695DC7290B6CD600FBCEC5 /* Debug_27D27NC4P5_ShanghaiYunzhanggui */,
+				E2695DC4290B6CC700FBCEC5 /* Debug_LJTDBM4U3C_ChengduYunli */,
+				E2695DC1290B6C9600FBCEC5 /* Debug_33NTY77JS5_GuiyangHuochebang */,
+				AD0D317C263119F800E7EC95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD0D31F426311BBF00E7EC95 /* Build configuration list for PBXNativeTarget "TMSDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0D31F526311BBF00E7EC95 /* Debug */,
+				E2D9C2C6290BBC0800D08B50 /* AdHoc */,
+				E2695DC8290B6CD600FBCEC5 /* Debug_27D27NC4P5_ShanghaiYunzhanggui */,
+				E2695DC5290B6CC700FBCEC5 /* Debug_LJTDBM4U3C_ChengduYunli */,
+				E2695DC2290B6C9600FBCEC5 /* Debug_33NTY77JS5_GuiyangHuochebang */,
+				AD0D31F626311BBF00E7EC95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBA8D792646E591000EF597 /* Build configuration list for PBXNativeTarget "TMSMerchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBA8D7A2646E591000EF597 /* Debug */,
+				E2D9C2C7290BBC0800D08B50 /* AdHoc */,
+				E2695DC9290B6CD600FBCEC5 /* Debug_27D27NC4P5_ShanghaiYunzhanggui */,
+				E2695DC6290B6CC700FBCEC5 /* Debug_LJTDBM4U3C_ChengduYunli */,
+				E2695DC3290B6C9600FBCEC5 /* Debug_33NTY77JS5_GuiyangHuochebang */,
+				ADBA8D7B2646E591000EF597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD0D315C263119F600E7EC95 /* Project object */;
+}

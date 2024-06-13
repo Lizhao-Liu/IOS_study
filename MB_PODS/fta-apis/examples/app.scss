@@ -1,0 +1,50 @@
+/*  #ifdef  h5  */
+body {
+  line-height: 1.2;
+}
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.doc-body .panel__title {
+  position: relative;
+  margin-bottom: 1.06667rem;
+  padding-left: 1.06667rem;
+  color: #6a6a77;
+  font-size: 0.68267rem;
+  font-weight: 700;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0.512rem;
+    top: 50%;
+    margin-top: -0.42667rem;
+    width: 2px;
+    height: 0.85333rem;
+    background-color: #6190e8;
+    border-radius: 1px;
+  }
+}
+/*  #endif  */
+
+/*  #ifndef rn  */
+div, view, taro-view-core {
+  box-sizing: border-box;
+}
+/*  #endif  */
+
+html, body {
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+#reactApp {
+  height: 100%;
+}
+
+page {
+  height: 100%;
+}

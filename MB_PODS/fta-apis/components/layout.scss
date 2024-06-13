@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*  #ifndef  rn  */
+  border-bottom: 1px solid #eee;
+  /*  #endif  */
+}
+
+.titleStyle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 20px 10px 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.titleIconStyle {
+  display: flex;
+  width: 36px;
+  height: 36px;
+}
+.qrcode-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bodyStyle {
+  padding: 20px;
+  padding-top: 0;
+  background: #eee;
+  // flex: 1;
+}
+
+.propsTitleStyle {
+  position: relative;
+  font-size: 30px;
+  padding-left: 26px;
+  margin-bottom: 22px;
+}
+
+.margin {
+  margin: 60px;
+}
+
+.demo-layout-tab {
+  // min-width: 60px;
+  flex: 0 0 60px;
+}

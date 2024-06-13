@@ -1,0 +1,270 @@
+source 'git@code.amh-group.com:iOSYmm/mb-specrepo.git'
+source 'git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git'  # 满帮内网第三方库
+
+platform :ios, '12.0'
+
+
+install! 'cocoapods', :deterministic_uuids => false
+
+#use_frameworks!
+#inhibit_all_warnings!
+use_modular_headers!
+
+#共用三方库
+def thirdLibs
+  pod 'AAChartKit', '5.0.4', :inhibit_warnings => true
+  pod 'AFNetworking', '4.0.1.12', :inhibit_warnings => true
+  pod 'AliyunOSSiOS', '2.10.8', :inhibit_warnings => true
+  pod 'Bugly', '2.5.4', :inhibit_warnings => true
+  pod 'CocoaAsyncSocket', '7.6.3', :inhibit_warnings => true
+  pod 'DTCoreText', '1.6.21.8', :inhibit_warnings => true
+  pod 'FMDB', '2.7.5.2', :inhibit_warnings => true
+  pod 'HwOBS', '3.20.11.1', :inhibit_warnings => true
+  pod 'glog', '0.3.5.16', :modular_headers => false, :inhibit_warnings => true
+  pod 'GTSDK', '3.0.5.0', :modular_headers => false, :inhibit_warnings => true
+  pod 'GTCommonSDK', '3.0.5.0', :modular_headers => false, :inhibit_warnings => true
+  pod 'GZIP', '1.2.2.1', :inhibit_warnings => true
+  pod 'IQKeyboardManager', '5.0.6', :inhibit_warnings => true
+  pod 'iflyMSC', '0.1.0', :inhibit_warnings => true
+  pod 'JSONKit', '2.0.0', :inhibit_warnings => true
+  pod 'LKDBHelper', '2.5.1.7', :inhibit_warnings => true
+  pod 'lottie-ios', '2.5.2.1'
+  pod 'Matrix', '1.0.8.4', :inhibit_warnings => true
+  pod 'Masonry', '1.1.2.1', :inhibit_warnings => true
+  pod 'MBProgressHUD', '0.9.2.4', :inhibit_warnings => true
+  pod 'MMKV', '1.2.4', :inhibit_warnings => true
+  pod 'MMKVCore', '1.2.4', :inhibit_warnings => true
+  pod 'MJRefresh', '3.7.2', :inhibit_warnings => true
+  pod 'ReactiveObjC', '3.1.1.1', :inhibit_warnings => true
+  pod 'RegexKitLite', '4.0', :inhibit_warnings => true
+  pod 'Reachability', '3.5.1', :inhibit_warnings => true
+  pod 'React', '0.62.2.72', :inhibit_warnings => true
+  pod 'RSSwizzle', '0.1.0.1', :inhibit_warnings => true
+  pod 'ScanKitFrameWork', '1.1.0.305'
+  pod 'SDCycleScrollView', '1.78.1', :inhibit_warnings => true
+  pod 'SDWebImage', '5.15.5.3', :inhibit_warnings => true
+  pod 'SDWebImageWebPCoder', '0.8.4.2', :inhibit_warnings => true
+  pod 'SQLCipher', '4.3.0', :inhibit_warnings => true
+  pod 'SSZipArchive', '2.2.3', :inhibit_warnings => true
+  pod 'TypedJSON', '1.2.0', :inhibit_warnings => true
+  pod 'WechatOpenSDK', '1.8.7.1', :inhibit_warnings => true
+  pod 'YYCache', '1.0.4', :inhibit_warnings => true
+  pod 'YYImage', '1.0.4', :inhibit_warnings => true
+  pod 'YYModel', '1.0.4.1', :inhibit_warnings => true
+  pod 'YYText', '1.0.7.3', :inhibit_warnings => true
+  pod 'Yoga', '1.14.10', :inhibit_warnings => true
+end
+
+def mbbasic
+    
+  #HCB a-z
+  pod 'HCBAppBasis', '4.5.4'
+  pod 'HCBCodeScaner', '2.1.21'
+  pod 'HCBLoginSDK', '1.0.14'
+  pod 'HCBNetwork', '5.2.33'
+  pod 'HCBRiskShieldService', '1.1.3'
+  pod 'HCBUserBasis', '2.1.6'
+  
+  #MB a-z
+  pod 'MBAPMLib', '0.21.2'
+  pod 'MBAPMServiceLib', '0.14.0'
+  pod 'MBAdvertModule', '1.11.4'
+  pod 'MBAdvertModuleService', '0.9.17'
+  pod 'MBAppBasisModule',  '0.6.19'
+  pod 'MBBizPopViewLib', '1.1.5'
+  pod 'MBBuildPreLib','0.1.0'
+  pod 'MBCommonUILib', '0.10.5'
+  pod 'MBCargoModuleService', '1.2.2-beta2'
+  pod 'MBConfigCenter', '1.9.15'
+  pod 'MBConfigCenterService', '0.3.5'
+  pod 'MBDavinciModule', '1.70.57'
+  pod 'MBDoctor', '1.12.1'
+  pod 'MBDoctorService', '0.12.0'
+  pod 'MBDynamicContainerLib', '0.1.31'
+  pod 'MBFeedbackService', '0.1.6'
+  pod 'MBFlutterCommonView', '0.1.3.6'
+  pod 'MBFlutterLib', '0.4.22.43'
+  pod 'MBFileTransferLib', '0.4.2.3'
+  pod 'MBFoundation', '0.9.1'
+  pod 'MBJSCore_iOS', '0.1.30'
+  pod 'MBLauncherLib', '0.12.2'
+  pod 'MBLiveActivityLib', '0.1.10'
+  pod 'MBLocationLib', '1.2.79'
+  pod 'MBLogLib', '0.6.0'
+  pod 'MBMainContainerLib', '0.3.8-beta2'
+  pod 'MBMainPopupLib', '0.1.25'
+  pod 'MBMarioLib', '1.8.3'
+  pod 'MBMarioServices', '1.2.0'
+  pod 'MBMarketingModule', '1.9.3'
+  pod 'MBMarketingService', '1.3.9'
+  pod 'MBMapLib', '2.8.181'
+  pod 'MBMapLibCore', '0.1.2'
+  pod 'MBMapLibModuleService', '0.1.0'
+  pod 'MBMediaLib', '0.3.19'
+  #新长连接库
+  pod 'MBMessageCenterLib', '0.4.8'
+  # pod 'MBNetwork', '0.2.26'
+  pod 'MBNetworkCache', '1.0.4'
+  pod 'MBNetworkLib', '1.1.12'
+  pod 'MBPrivacyService', '0.1.22'
+  pod 'MBProjectConfig', '0.17.3'
+  pod 'MBPushModuleService', '0.2.4'
+  pod 'MBRiskControlLib', '0.1.14'
+  pod 'MBRiskControlModule', '0.2.4'
+  pod 'MBRiskControlSecurityLib', '0.7.3.1'
+  pod 'MBRiskControlSecurityServiceLib', '0.6.0'
+  pod 'MBRNCommonView', '0.1.30'
+  pod 'MBRNLib', '0.0.170'
+  pod 'MBRNServiceLib', '0.1.2'
+  pod 'MBSecurityLib', '0.2.27'
+  pod 'MBServiceModule', '0.2.6', :subspecs=> ['Api', 'Imp']
+  pod 'MBShareService', '0.2.0'
+  pod 'MBShareLib', '0.2.8'
+  pod 'MBShareModule', '0.2.4'
+  pod 'MBShareWX', '0.1.7'
+  pod 'MBStorageLib', '0.9.0'
+  pod 'MBStorageBridgeImp', '0.1.0'
+  pod 'MBStorageLibService', '0.5.0'
+  pod 'MBTigaModule', '1.6.2'
+  pod 'MBTigaModuleService', '0.2.3'
+  pod 'MBUIKit', '0.18.0'
+  pod 'MBVersionModule', '1.4.2'
+  pod 'MBWalletHttp', '1.20.1'
+  pod 'MBWalletDoctor', '0.3.2'
+  pod 'MBWalletModuleService', '0.9.1'
+  pod 'MBWebView', '0.30.20', :subspecs=> ['Contact', 'Offline']
+  pod 'MBWechatOpenSDK', '0.1.1'
+  pod 'MBXarLib', '0.2.19.5'
+  pod 'MBXarLibService', '0.0.10'
+  pod 'MBXarLibUI', '0.2.6.1', :configurations => ['Release'] # ？
+  
+  #YMM a-z
+  pod 'YMMAuditService', '0.1.32'
+  pod 'YMMActionModule', '1.2.18'
+  pod 'YMMBridgeLib', '1.9.2'
+  pod 'YMMBridgeModule', '1.12.3'
+  pod 'YMMBridgeModuleService', '0.2.0'
+  pod 'YMMCommunicateLib', '1.6.0'
+  pod 'YMMExprLib', '0.1.70'
+  pod 'YMMExtensionAppLib', '0.4.16'
+  pod 'YMMIMModuleService', '0.2.14'
+  pod 'YMMImagePicker', '1.12.2'
+  pod 'YMMMainServices', '0.10.6'
+  pod 'YMMMineService', '0.1.84'
+  pod 'YMMModuleLib', '0.19.7'
+  pod 'YMMNetwork', '1.6.2'
+  pod 'YMMPayLib', '0.3.10'
+  pod 'YMMPrivacyModule', :git=>'git@code.amh-group.com:iOSYmm/YMMPrivacyModule.git', :tag=>'tms-1.1.34' # 注意：隐私协议库使用特殊分支集成
+  pod 'YMMPushModule', '2.1.35'
+  pod 'YMMRouterLib', '0.46.1.1'
+  pod 'YMMRouterModule', '1.5.2'
+  pod 'YMMTransactionModuleService', '0.2.24'
+  pod 'YMMUserModuleService', '0.3.23'
+  pod 'YMMVoiceDictationModule', '1.7.1'
+  mbttslib
+  
+end
+
+def mbttslib
+  pod 'HCBFinancialTools', '4.30.2-beta2'
+  pod 'MBCargoModuleService', '1.2.2-beta2'
+  pod 'YMMTTSLib', '0.4.16'
+end
+
+
+def mb_debug_module_pod (name, tag)
+  pod "#{name}", "#{tag}", :configurations => ['AdHoc','Debug', 'Debug_27D27NC4P5_ShanghaiYunzhanggui', 'Debug_33NTY77JS5_GuiyangHuochebang', 'Debug_LJTDBM4U3C_ChengduYunli']
+end
+
+def mbdebug_pods
+  mb_debug_module_pod 'MBDebug', '3.3.4'
+  mb_debug_module_pod 'MBDebugService', '0.5.4'
+  mb_debug_module_pod 'MBMainPopupLibDebug', '0.0.11'
+  mb_debug_module_pod 'FBRetainCycleDetector', '0.1.4.6'
+  mb_debug_module_pod 'MBDoctorDebug', '1.1.4'
+  mb_debug_module_pod 'MBRouterDebug','1.3.0' 
+  mb_debug_module_pod 'MBXarDebug', '0.2.7.2'
+  mb_debug_module_pod 'YMMNetworkDebug', '0.6.0'
+  mb_debug_module_pod 'YMMRNUtilsDebug', '1.0.40'
+  mb_debug_module_pod 'DoraemonKit', '3.0.2.8'
+  mb_debug_module_pod 'MBWebViewDebug', '0.2.0'
+  mb_debug_module_pod 'LookinServer', '1.0.0'
+  mb_debug_module_pod 'MBAPMDebug', '0.4.13'
+  mb_debug_module_pod 'MBConfigCenterDebug', '0.3.3'
+  mb_debug_module_pod 'MBLogLibDebug', '0.2.2'
+  mb_debug_module_pod 'MBFileTransferLibDebug', '0.1.5'
+  mb_debug_module_pod 'MBPushModuleDebug', '1.2.4'
+  mb_debug_module_pod 'MBMarioDebug', '1.3.3'
+  mb_debug_module_pod 'YMMExprDebug', '0.1.5'
+  mb_debug_module_pod 'MBUIKitDebug', '1.1.1'
+  mb_debug_module_pod 'MBCommonUILibDebug', '0.2.2'
+  mb_debug_module_pod 'MBShareDebug', '0.2.1'
+  mb_debug_module_pod 'MBBridgeLibDebug', '0.4.3'
+  mb_debug_module_pod 'MBMediaDebug', '0.2.1'
+  mb_debug_module_pod 'MBStorageLibDebug', '0.1.7'
+  mb_debug_module_pod 'MBAdvertModuleDebug', '0.1.2'
+end
+
+
+#商户端独有
+def onlyForMerchantLibs
+  
+  pod 'MBPermission', '2.0.9', :subspecs=> ['common', 'basic', 'notification', 'camera', 'photos', 'location', 'microphone', 'tracking', 'contacts']
+  pod 'MBXarResourceLib', :git => 'git@code.amh-group.com:iOSNJ/MBXarResourceLib.git', :tag =>'tms__rn_tms-beta420_20240308_19_12_25', :subspecs=>['TMSMerchant']
+  pod 'MBTMSModule', :path => 'MBTMSModule/'
+  pod 'MBTMSModuleDebug', :path => 'MBTMSModule/', :configurations => ['AdHoc','Debug', 'Debug_27D27NC4P5_ShanghaiYunzhanggui', 'Debug_33NTY77JS5_GuiyangHuochebang', 'Debug_LJTDBM4U3C_ChengduYunli']
+
+end
+
+#司机端独有
+def onlyForDriverLibs
+  pod 'MBXarResourceLib', :git => 'git@code.amh-group.com:iOSNJ/MBXarResourceLib.git', :tag =>'tms__rn_tms-beta420_20240308_19_12_25', :subspecs=>['TMSDriver']
+end
+
+abstract_target 'abstract_pod' do
+  # 三方库有的模块可以写在这三个方法里
+  thirdLibs
+
+  target 'TMSMerchant' do
+    thirdLibs
+    mbbasic
+    mbdebug_pods
+    onlyForMerchantLibs
+    
+  end
+
+  target 'TMSDriver' do
+    thirdLibs
+    mbbasic
+    mbdebug_pods
+    onlyForDriverLibs
+  end
+  
+  # false依赖远程产物，远程分支通过FLUTTER_APP_BRANCH字段设置，同时通过分支区分模拟器or真机
+  # true通过本地代码实时编译，需要本地安装flutterSDK，本地路径通过FLUTTER_APP_PATH字段设置，支持模拟器+真机
+  FLUTTER_DEBUG_APP=false
+  
+  # 是否从远程更新最新产物
+  FLUTTER_NEED_UPDATE=true
+  
+  #  https://code.amh-group.com/iOSYmm/MBFlutterFrameworks/
+  # debug模式下，分支格式’flutter_0114_Debug‘，支持模拟器+真机，同时支持hot reload + hot restart
+  # release模式下，分支格式’flutter_0114‘，支持真机，用于线上发布
+  FLUTTER_APP_BRANCH="dev/20231130"
+ 
+  # 仅当FLUTTER_DEBUG_APP为true时有效，本地flutter宿主路径，仓库地址为’git@code.amh-group.com:MBFrontend/Flutter/mbflutter_host.git‘
+  FLUTTER_APP_PATH='mbflutter_host本地路径'
+  #FLUTTER_APP_PATH='/Users/xw/.ymm_work/mbflutter_host'
+  
+  flutter_application_path = File.join('./.scripts', 'flutterhelper.rb')
+  #flutter_application_path = File.join('./.scripts', 'x_build_flutter_app.rb')
+  eval(File.read(flutter_application_path), binding)
+  
+  
+  motify_xcode15_ld_classic = File.join('./.scripts', 'motify_xcode15_ld_classic.sh')
+    `arch -x86_64 bash -x #{motify_xcode15_ld_classic}`
+
+  mb_pod_post_install_path = File.join('./.scripts', 'mb_pod_post_install.rb')
+  eval(File.read(mb_pod_post_install_path), binding)
+  
+end

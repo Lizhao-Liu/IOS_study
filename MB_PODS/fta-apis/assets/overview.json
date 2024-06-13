@@ -1,0 +1,406 @@
+{
+  "title": "Tiga 总览",
+  "subTitle": "{{Tiga}} 为跨端应用提供了丰富的原子 API 集，我们将打造最全使用最便利的原子 API 集",
+  "contributors": {
+    "official": {
+      "name": "Taro",
+      "avatar": "https://img20.360buyimg.com/ling/jfs/t1/20876/36/12835/3043/5c9c2929Ed18cfb11/15b1c03ec830ab8e.png"
+    },
+    "unknown": {
+      "name": "待认领",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/d293584adab7fbcc7a2943ec6391809f.jpeg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1"
+    },
+    "tianyu.xia": {
+      "name": "夏天宇",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/resource/cd29de49-615a-414c-9897-021ebeb8ec2e.jpg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "u7oymc4"
+    },
+    "qiulan.zhang": {
+      "name": "张秋兰",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/resource/a5580d1f-add4-44b7-a8f7-5b2498adc5d8.JPG?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "laetpmp"
+    },
+    "shuai.zhang": {
+      "name": "张帅",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/resource/177b0955-cef8-46a4-99b5-fcbe1748f12f.jpg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "1sz-121m5d0eob"
+    },
+    "jian.sun1": {
+      "name": "孙健",
+      "avatar": "https://devimage.ymm56.com/ymmfile/static/resource/5be139d2-05a3-4eee-bcea-7d94d9858bdd.jpg",
+      "dingTalk": "hmllfyo"
+    },
+    "qicheng.zhang": {
+      "name": "章启成",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/WechatIMG165.jpeg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "k296xgq"
+    },
+    "meng.yuan2": {
+      "name": "苑蒙",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/1571635750302_.pic.jpg?x-oss-process=image/resize,m_fixed,w_50/format,png/circle,r_50/interlace,1",
+      "dingTalk": "d5v_4fldthxp4"
+    },
+    "zhiguo.cheng": {
+      "name": "程志国",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/93484b8e205c4938b603d741b18c7ab4.jpg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "peterczg"
+    },
+    "xincheng.zhao": {
+      "name": "赵新成",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/01ea0b304ce946a387642ab2d6594651.jpg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "rvgcse6"
+    },
+    "shihua.xie": {
+      "name": "谢世华",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/4b5a54914aa54de48fa9042b1649596b.jpg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "xl92vlg"
+    },
+    "yaolin.li": {
+      "name": "李瑶琳",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/f5a0f7167921402d8506c75c1f3a64fd.jpg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "liyaolindd"
+    },
+    "yingkun.li": {
+      "name": "李颖琨",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/c69320ccb2fe42209729bdd32f6fa7b2.jpg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "hopefe"
+    },
+    "fei.xuan": {
+      "name": "宣飞",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/9cfc124a680e481b952df4ef7f34023d.jpg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "jyxawat"
+    },
+    "lu.wang7": {
+      "name": "王璐",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/8070158de5524d1bb9d16c94d934177b.jpg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "es60kzz"
+    },
+    "guanglin.cai": {
+      "name": "蔡广林",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/image/WechatIMG76.jpeg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "kevincai7"
+    },
+    "lixin.weng": {
+      "name": "翁立鑫",
+      "avatar": "https://devimage.ymm56.com/ymmfile/static/resource/4e302fa8-c8a4-4add-9257-eb34a281b0a6.jpeg?x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "b7fwz49"
+    },
+    "kang.ji": {
+      "name": "季康",
+      "avatar": "https://imagecdn.ymm56.com/ymmfile/static/resource/3e55eaa4-ba52-4698-8f70-d8f913d4958c.JPG??x-oss-process=image/resize,m_fixed,w_60/format,png/circle,r_60/interlace,1",
+      "dingTalk": "tim0pgs"
+    },
+    "longbing.you": { "name": "游龙兵", "avatar": "", "dingTalk": "c4wmaeq" },
+    "xianming.chang": { "name": "常贤明", "avatar": "", "dingTalk": "heroming1208" },
+    "zhanxiang.shi": { "name": "施展翔", "avatar": "", "dingTalk": "vh6w7uc" },
+    "lizhao.liu": { "name": "刘力朝", "avatar": "", "dingTalk": "12t-bugfmhi5aa" },
+    "qi.wang8": { "name": "王奇", "avatar": "", "dingTalk": "" },
+    "dongwang.feng": { "name": "冯东旺", "avatar": "", "dingTalk": "" },
+    "dongwang.feng@amh-group.com": { "name": "冯东旺", "avatar": "", "dingTalk": "" },
+    "": { "name": "", "avatar": "", "dingTalk": "" }
+  },
+  "components": {
+    "tiga": {
+      "name": "Tiga Module",
+      "list": [
+        {
+          "cross": true,
+          "name": "caniuse",
+          "remark": "可用性判断",
+          "author": "longbing.you",
+          "snapshot": "",
+          "support": ["mw", "thresh", "logic", "h5"]
+        },
+        {
+          "cross": true,
+          "name": "Event",
+          "remark": "事件总线",
+          "author": "zhanxiang.shi",
+          "snapshot": "",
+          "support": ["mw", "thresh"]
+        },
+        {
+          "cross": true,
+          "name": "System",
+          "remark": "系统设备",
+          "author": ["dongwang.feng", "longbing.you"],
+          "snapshot": "",
+          "support": ["thresh", "mw"],
+          "demos": [
+            {
+              "name": "calendar",
+              "remark": "日历"
+            },
+            {
+              "name": "clipboard",
+              "remark": "剪贴板"
+            },
+            {
+              "name": "contact",
+              "remark": "联系人"
+            },
+            {
+              "name": "accessibility",
+              "remark": "无障碍"
+            },
+            {
+              "name": "phone",
+              "remark": "电话"
+            },
+            {
+              "name": "screen",
+              "remark": "屏幕"
+            },
+            {
+              "name": "setting",
+              "remark": "设置"
+            },
+            {
+              "name": "sms",
+              "remark": "短信"
+            },
+            {
+              "name": "vibrate",
+              "remark": "震动"
+            }
+          ]
+        },
+        {
+          "cross": true,
+          "name": "Common",
+          "remark": "通用工具",
+          "author": ["xianming.chang", "longbing.you"],
+          "snapshot": "",
+          "support": ["thresh", "mw"]
+        },
+        {
+          "cross": true,
+          "name": "Ui",
+          "remark": "视图交互",
+          "author": "lizhao.liu",
+          "snapshot": "",
+          "demos": [
+            {
+              "name": "toast",
+              "remark": "轻提示"
+            },
+            {
+              "name": "loading",
+              "remark": "加载中提示"
+            },
+            {
+              "name": "dialog",
+              "remark": "弹窗"
+            },
+            {
+              "name": "actionsheet",
+              "remark": "底部菜单"
+            }
+          ],
+          "support": ["h5", "thresh", "mw", "logic"]
+        },
+        {
+          "cross": true,
+          "name": "Storage",
+          "remark": "数据存储",
+          "author": "zhanxiang.shi",
+          "snapshot": "",
+          "support": ["mw", "thresh"]
+        },
+        {
+          "cross": true,
+          "name": "Permission",
+          "remark": "权限",
+          "author": "qi.wang8",
+          "snapshot": "",
+          "support": ["weapp", "thresh", "mw"]
+        },
+        {
+          "cross": true,
+          "name": "Media",
+          "remark": "多媒体",
+          "author": "longbing.you",
+          "snapshot": "",
+          "support": ["thresh", "mw"]
+        },
+        {
+          "cross": true,
+          "name": "Network",
+          "remark": "网络",
+          "author": "dongwang.feng",
+          "snapshot": "",
+          "support": ["thresh", "mw"]
+        },
+        {
+          "cross": true,
+          "name": "Tracker",
+          "remark": "埋点日志",
+          "author": "longbing.you",
+          "snapshot": "",
+          "demos": [
+            {
+              "name": "biz",
+              "remark": "通用埋点"
+            },
+            {
+              "name": "monitor",
+              "remark": "监控上报"
+            },
+            {
+              "name": "transaction",
+              "remark": "自定义分段耗时"
+            },
+            {
+              "name": "pageperformance",
+              "remark": "页面加载耗时"
+            },
+            {
+              "name": "log",
+              "remark": "离线日志"
+            },
+            {
+              "name": "globalparams",
+              "remark": "全局埋点参数"
+            }
+          ],
+          "support": ["mw", "thresh"]
+        },
+        {
+          "cross": true,
+          "name": "Location",
+          "remark": "位置",
+          "author": "dongwang.feng",
+          "snapshot": "",
+          "support": ["mw", "thresh"],
+          "demos": [
+            {
+              "name": "location",
+              "remark": "定位"
+            },
+            {
+              "name": "region",
+              "remark": "区域"
+            }
+          ]
+        },
+        {
+          "cross": true,
+          "name": "Social",
+          "remark": "社会化功能",
+          "author": "lizhao.liu",
+          "snapshot": "",
+          "demos": [
+            {
+              "name": "share",
+              "remark": "分享"
+            },
+            {
+              "name": "showsharemenu",
+              "remark": "弹起分享菜单"
+            },
+            {
+              "name": "menushare",
+              "remark": "多渠道分享"
+            },
+            {
+              "name": "getsharechannels",
+              "remark": "获取应用支持的分享渠道"
+            },
+            {
+              "name": "miniprogram",
+              "remark": "打开小程序"
+            }
+          ],
+          "support": ["h5", "thresh", "mw", "logic"]
+        },
+        {
+          "cross": true,
+          "name": "Popup",
+          "remark": "弹窗管控",
+          "author": "dongwang.feng",
+          "snapshot": "",
+          "support": ["thresh", "mw"]
+        },
+        {
+          "cross": true,
+          "name": "Tabbar",
+          "remark": "首页Tab",
+          "author": "xianming.chang",
+          "snapshot": "",
+          "support": ["mw", "thresh"]
+        },
+        {
+          "cross": false,
+          "name": "Navigator",
+          "remark": "路由导航",
+          "author": "zhanxiang.shi",
+          "snapshot": "",
+          "demos": [
+            {
+              "name": "pop",
+              "remark": "回退页面"
+            },
+            {
+              "name": "push",
+              "remark": "进入新页面"
+            },
+            {
+              "name": "navigate",
+              "remark": "组合执行页面跳转"
+            },
+            {
+              "name": "redirect",
+              "remark": "页面重定向"
+            },
+            {
+              "name": "getapppages",
+              "remark": "查询当前页面历史栈"
+            }
+          ],
+          "support": ["thresh", "mw"]
+        },
+        {
+          "cross": false,
+          "name": "Message",
+          "remark": "push长链",
+          "author": "xianming.chang",
+          "snapshot": "",
+          "support": ["thresh", "mw"]
+        },
+        {
+          "cross": false,
+          "name": "Advertisement",
+          "remark": "营销广告",
+          "author": "dongwang.feng@amh-group.com",
+          "snapshot": "",
+          "support": ["h5", "thresh", "mw", "logic"]
+        },
+        {
+          "cross": false,
+          "name": "Apm",
+          "remark": "APM",
+          "author": "lizhao.liu",
+          "snapshot": "",
+          "demos": [
+            {
+              "name": "memory",
+              "remark": "内存使用情况"
+            },
+            {
+              "name": "storage",
+              "remark": "存储空间使用情况"
+            }
+          ],
+          "support": ["h5", "thresh", "mw", "logic"]
+        }
+      ]
+    }
+  },
+  "fallback": {
+    "snapshot": "https://gw.alipayobjects.com/zos/alicdn/_1-C1JwsC/Anchor.svg",
+    "avatar": "https://joeschmoe.io/api/v1/random",
+    "webpFormat": "?x-oss-process=image%2Fformat%2Cwebp%2Finterlace%2C1",
+    "thumb": "https://imagecdn.ymm56.com/ymmfile/static/resource/fdadd114-f00b-4c66-a45f-dce32e525ec4.png",
+    "dingTalk": "peterczg"
+  }
+}

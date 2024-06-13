@@ -1,0 +1,42 @@
+.fta-comment-container > div > button {
+  position: relative;
+  width: 104px;
+  height: 32px;
+  box-sizing: border-box;
+  background-color: #1F5DE9;
+  border: none !important;
+  outline: none !important;
+  border-radius: 4px;
+
+
+
+  span {
+    display: none;
+  }
+
+  &:hover, &:focus{
+    background-color: #4B7DED;
+  }
+
+  &:active{
+    background-color: #1B53D1;
+  }
+
+  &::after{
+    padding-left: 20px;
+    content: '添加评论';
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    background-image: url(https://imagecdn.ymm56.com/ymmfile/static/resource/9f33d1bb-a59c-419b-a2b0-be81edd3a333.png);
+    background-repeat: no-repeat;
+    background-size: 17px 16px;
+    background-position: 7px center;
+  }
+}
+
+.fta-comment-to-name,.anticon-like, .ant-btn-link{
+  color: #1F5DE9 !important;
+  fill: #1F5DE9
+}
+

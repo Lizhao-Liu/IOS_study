@@ -1,0 +1,45 @@
+{
+  "name": "@tarojs/with-weapp",
+  "version": "3.6.7",
+  "description": "taroize 之后的运行时",
+  "main": "index.js",
+  "files": [
+    "dist",
+    "src",
+    "index.js",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NervJS/taro/tree/master/packages/taro-with-weapp"
+  },
+  "author": "yuche",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "dev": "rollup -c -w rollup.config.js",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.5",
+    "@tarojs/runtime": "workspace:*",
+    "@tarojs/taro": "workspace:*",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@types/sinon": "^7.5.0",
+    "jest": "^29.3.1",
+    "jest-cli": "^29.3.1",
+    "jest-environment-jsdom": "^29.5.0",
+    "jsdom": "^21.1.0",
+    "rollup": "^2.79.0",
+    "rollup-plugin-ts": "^3.0.2",
+    "sinon": "^7.5.0",
+    "ts-jest": "^29.0.5",
+    "typescript": "^4.7.4"
+  }
+}

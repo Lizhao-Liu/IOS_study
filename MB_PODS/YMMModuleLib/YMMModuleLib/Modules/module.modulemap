@@ -1,0 +1,6 @@
+          framework module YMMModuleLib {
+            umbrella header "YMMModuleLib.h"
+
+            export *
+            module * { export * }
+          }

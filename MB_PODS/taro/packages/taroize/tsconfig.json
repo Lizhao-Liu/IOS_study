@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.root.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "lib",
+    "rootDir": ".",
+    "module": "commonjs",
+    "sourceMap": true,
+    "preserveConstEnums": true
+  },
+  "include": ["./src"]
+}

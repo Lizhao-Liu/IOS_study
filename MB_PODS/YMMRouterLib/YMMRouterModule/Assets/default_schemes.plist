@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>schemes</key>
+	<array>
+		<string>ymm</string>
+		<string>ymm-driver</string>
+        <string>ymm-consignor</string>
+        <string>wlqq</string>
+        <string>wlqq.driver</string>
+        <string>wlqq.consignor</string>
+        <string>mbccl-consignor</string>
+        <string>mbsd-driver</string>
+        <string>mbsd-consignor</string>
+	</array>
+</dict>
+</plist>

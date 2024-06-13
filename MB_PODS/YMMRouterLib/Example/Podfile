@@ -1,0 +1,22 @@
+platform :ios, '10.0'
+source 'git@code.amh-group.com:iOSYmm/mb-specrepo.git'
+#source 'git@code.amh-group.com:iOSYmm/mb-binary-specrepo.git'
+#source 'git@code.amh-group.com:cocoapods/specs.git'
+source 'git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git'
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+#source 'https://cdn.cocoapods.org/'
+
+inhibit_all_warnings!
+use_modular_headers!
+
+use_frameworks!
+
+target 'YMMRouterLib_Example' do
+  pod 'YMMRouterLib', :path => '../'
+
+  target 'YMMRouterLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

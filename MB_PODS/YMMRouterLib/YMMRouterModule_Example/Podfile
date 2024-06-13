@@ -1,0 +1,19 @@
+source 'git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git'
+source 'git@code.amh-group.com:iOSYmm/mb-specrepo.git'
+
+platform :ios, '10.0'
+use_modular_headers!
+
+target 'YMMRouterModule_Example' do
+  pod 'YMMRouterModule', :path => '../YMMRouterModule.podspec'
+  pod 'MBRouterDebug'
+  pod 'MBLauncherLib'
+
+  # pod 'MBDebug', :git=>'git@code.ymmoa.com:iOSYmm/MBDebug.git', :commit=>'86f0dcf'
+
+  target 'YMMRouterModule_Tests' do
+    inherit! :search_paths
+
+  end
+end
+

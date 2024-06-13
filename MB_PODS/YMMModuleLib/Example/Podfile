@@ -1,0 +1,25 @@
+source 'git@code.amh-group.com:iOSYmm/mb-specrepo.git'
+source 'git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git'  # 满帮内网第三方库
+source 'git@code.amh-group.com:iOSYmm/mb-binary-specrepo.git'
+
+#use_frameworks!
+use_modular_headers!
+
+target 'YMMModuleLib_Example' do
+  
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['ENABLE_BITCODE'] = 'NO'
+        config.build_settings["DEVELOPMENT_TEAM"] = "27D27NC4P5"
+      end
+    end
+  end
+  pod 'YMMModuleLib', :path => '../'
+#  pod 'MBProjectConfig', :path => '../../MBProjectConfig'
+end
+
+target 'YMMModuleLib_Tests' do
+  pod 'YMMModuleLib', :path => '../'
+#  pod 'MBProjectConfig', :path => '../../MBProjectConfig'
+end

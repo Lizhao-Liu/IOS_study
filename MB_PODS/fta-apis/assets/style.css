@@ -1,0 +1,79 @@
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+  font-size: inherit;
+}
+
+.__dumi-default-navbar-logo {
+  width: 125px !important;
+  font-size: 0px !important;
+}
+
+.__dumi-default-layout-hero {
+  display: none !important;
+}
+
+.__dumi-default-layout-content {
+  max-width: none !important;
+  padding-bottom: 20px;
+}
+
+.__dumi-default-layout {
+  padding: 90px 0 0 0 !important;
+}
+
+.__dumi-default-device {
+  margin-left: 30px !important
+}
+
+.__dumi-default-layout-footer {
+  background: #091739 !important;
+  color: #fff !important;
+  margin: 0 !important;
+  padding: 24px 0 !important
+}
+
+.__dumi-default-layout-footer .markdown {
+  color: #fff !important;
+  font-size: 12px !important;
+}
+
+.__dumi-default-layout-toc {
+  padding: 0 !important
+}
+
+.__dumi-default-menu-inner {
+  overflow: hidden !important;
+}
+
+.__dumi-default-menu:hover .__dumi-default-menu-inner {
+  overflow: auto !important;
+}
+
+.__dumi-default-previewer-desc[data-title]:empty+.__dumi-default-previewer-actions {
+  border-top-style: none !important
+}
+
+.__dumi-default-layout[data-site-mode='true'][data-show-slugs='true'] {
+  padding-right: 170px !important
+}
+
+.__dumi-default-layout[data-site-mode='true'][data-show-sidemenu='true'] {
+  padding-left: 270px !important
+}
+
+@media only screen and (min-width: 768px) {
+  .__dumi-default-menu[data-mode='site'] {
+    width: 240px !important;
+    padding-top: 0px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .__dumi-default-menu[data-mode='site'] .__dumi-default-menu-list>li>a~ul {
+    margin-left: 30px !important
+  }
+}

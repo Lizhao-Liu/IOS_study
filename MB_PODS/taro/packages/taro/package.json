@@ -1,0 +1,47 @@
+{
+  "name": "@tarojs/taro",
+  "version": "3.6.7",
+  "description": "Taro framework",
+  "homepage": "https://github.com/nervjs/taro/tree/master/packages/taro#readme",
+  "main": "index.js",
+  "typings": "types/index.d.ts",
+  "files": [
+    "index.js",
+    "types",
+    "html.css",
+    "html5.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NervJS/taro.git"
+  },
+  "keywords": [
+    "taro"
+  ],
+  "author": "O2Team",
+  "license": "MIT",
+  "dependencies": {
+    "@tarojs/api": "workspace:*",
+    "@tarojs/runtime": "workspace:*"
+  },
+  "devDependencies": {
+    "@tarojs/helper": "workspace:*"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@types/webpack": {
+      "optional": true
+    },
+    "@types/webpack-dev-server": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  }
+}

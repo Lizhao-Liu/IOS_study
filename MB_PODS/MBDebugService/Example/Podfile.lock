@@ -1,0 +1,37 @@
+PODS:
+  - MBDebugService (0.1.0)
+  - YMMLaunchTaskLib (0.1.1-SDK):
+    - YMMLogLib
+  - YMMLogLib (0.1.12)
+  - YMMModuleLib (0.3.2):
+    - YMMLaunchTaskLib
+    - YMMRouterLib
+  - YMMRouterLib (0.25.6)
+
+DEPENDENCIES:
+  - MBDebugService (from `../`)
+  - YMMLaunchTaskLib (= 0.1.1-SDK)
+  - YMMModuleLib (= 0.3.2)
+
+SPEC REPOS:
+  "git@code.ymmoa.com:iOSYmm/mb-binary-specrepo.git":
+    - YMMLaunchTaskLib
+  "git@code.ymmoa.com:iOSYmm/YMMSpecRepo.git":
+    - YMMLogLib
+    - YMMModuleLib
+    - YMMRouterLib
+
+EXTERNAL SOURCES:
+  MBDebugService:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBDebugService: a757fd9674692c0906a71ec0df4031e6329df382
+  YMMLaunchTaskLib: 2fd427e2a4c5506b41987a1822cf6ea6e3b82ec5
+  YMMLogLib: d6ddcd1f427cac2af9a5b06a44eaa96d65fadb94
+  YMMModuleLib: 0d3a68eeeff873cf4144d930b7d8f48fb17fd9a8
+  YMMRouterLib: 9133122b1e38c7a711e5932a22de7f27d26fd704
+
+PODFILE CHECKSUM: c02a7a11e61cff8ead14434de1f54dacd3cb7ea3
+
+COCOAPODS: 1.6.1

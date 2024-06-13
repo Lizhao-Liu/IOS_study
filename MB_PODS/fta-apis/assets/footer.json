@@ -1,0 +1,77 @@
+{
+  "feedback": {
+    "title": "扫码钉钉进入服务群",
+    "qrcode": "https://imagecdn.ymm56.com/ymmfile/static/resource/6697404d-8b41-4173-afdd-979292094ab6.jpeg?x-oss-process=image/resize,m_fixed,w_360"
+  },
+  "copyright": "满帮大前端 | 满帮DLC设计团队丨Copyright © 2021 - present Powered by dumi",
+  "friendLinks": [
+    {
+      "title": "设计",
+      "list": [
+        {
+          "label": "设计规范",
+          "url": ""
+        },
+        {
+          "label": "设计原则",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "组件",
+      "list": [
+        {
+          "label": "快速开始",
+          "url": "#/guide/quickstart"
+        },
+        {
+          "label": "基础组件",
+          "url": "#/components/basic"
+        },
+        {
+          "label": "布局组件",
+          "url": "#/components/layout"
+        },
+        {
+          "label": "导航组件",
+          "url": "#/components/nav"
+        },
+
+        {
+          "label": "反馈组件",
+          "url": "#/components/tickling"
+        },
+        {
+          "label": "业务组件",
+          "url": "#/components/pro"
+        },
+        {
+          "label": "信息输入组件",
+          "url": "#/components/form"
+        },
+        {
+          "label": "信息展示组件",
+          "url": "#/components/display"
+        }
+      ]
+    },
+    {
+      "title": "FTA Family",
+      "list": [
+        {
+          "label": "FTA Admin",
+          "url": "https://fta.amh-group.com/admin/#/"
+        },
+        {
+          "label": "FTA CLI",
+          "url": "https://fta.amh-group.com/cli/#/"
+        },
+        {
+          "label": "FTA Market Material",
+          "url": "https://fta.amh-group.com/material-market/#/"
+        }
+      ]
+    }
+  ]
+}

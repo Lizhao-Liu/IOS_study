@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "target": "es5",
+    "types": ["node"]
+  },
+  "include": ["src/**/*", "types/*"],
+  "compileOnSave": false,
+  "exclude": ["node_modules/*", "packages/dist/*"]
+}

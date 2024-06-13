@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qRH-WI-ivT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="w78-EX-ha9">
+            <objects>
+                <navigationController id="qRH-WI-ivT" customClass="MBAPMViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a7V-aT-nsr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nwG-E0-gaG" kind="relationship" relationship="rootViewController" id="e8R-Zk-F0p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usK-ll-hTA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="666"/>
+        </scene>
+        <!--Page Render TestVC-->
+        <scene sceneID="7hf-8B-Hsu">
+            <objects>
+                <viewController id="4kr-pv-8Pl" customClass="MBAPMPageRenderTestVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sBR-zH-1wK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjP-Hr-vfa">
+                                <rect key="frame" x="145" y="187" width="123" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="文本检测方案"/>
+                                <connections>
+                                    <action selector="selectTextMethod:" destination="4kr-pv-8Pl" eventType="touchUpInside" id="qxQ-kE-jyp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p77-8i-b5O">
+                                <rect key="frame" x="143" y="268" width="128" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Hook埋点方案"/>
+                                <connections>
+                                    <action selector="selectHookMethod:" destination="4kr-pv-8Pl" eventType="touchUpInside" id="baV-LK-McU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWJ-NA-iWy">
+                                <rect key="frame" x="145" y="354" width="123" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="手动埋点方案"/>
+                                <connections>
+                                    <action selector="selectManualMethod:" destination="4kr-pv-8Pl" eventType="touchUpInside" id="Crc-AH-NmN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hOL-u9-swq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Uf-bf-RuP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAO-Y3-H2j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="666"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dB3-Bv-6wt">
+            <objects>
+                <viewController id="nwG-E0-gaG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V4m-Fp-z8h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-99-pws">
+                                <rect key="frame" x="111" y="174" width="195" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="页面加载耗时检测"/>
+                                <connections>
+                                    <segue destination="4kr-pv-8Pl" kind="push" id="1Vo-NY-KpA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku9-nT-GMC">
+                                <rect key="frame" x="160" y="329" width="98" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="卡顿检测"/>
+                                <connections>
+                                    <segue destination="pYE-ps-88F" kind="push" id="rQc-Gi-0sB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5B-Qj-cbp">
+                                <rect key="frame" x="158" y="448" width="98" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="崩溃检测"/>
+                                <connections>
+                                    <segue destination="SVn-07-bwo" kind="push" id="COS-6C-IgX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="N9z-Xm-LpO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G64-b0-cPn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXG-9h-Iuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689.85507246376812" y="665.625"/>
+        </scene>
+        <!--Lag Test View Controller-->
+        <scene sceneID="aRQ-Tc-6ka">
+            <objects>
+                <viewController id="pYE-ps-88F" customClass="MBAPMLagTestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QgT-Y0-cHW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6dh-uj-Qgc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TCY-Za-rFt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRo-xo-AoY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="1311"/>
+        </scene>
+        <!--Crash Test View Controller-->
+        <scene sceneID="uXI-S6-0JJ">
+            <objects>
+                <viewController id="SVn-07-bwo" customClass="MBAPMCrashTestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zJp-cN-Pj6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab5-eg-qOt">
+                                <rect key="frame" x="148" y="353" width="98" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="点击崩溃"/>
+                                <connections>
+                                    <action selector="mockCrash:" destination="SVn-07-bwo" eventType="touchUpInside" id="inI-Zn-25T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="NmJ-7d-CRe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R4w-5T-EaN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zj-sO-GKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.98550724637687" y="-8.0357142857142847"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33A9DCD094AA5A5B253A03AD /* libPods-MBAPMLib_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A6977206603FA5C4DE07B9 /* libPods-MBAPMLib_Tests.a */; };
+		436964BD26B91715002E65BB /* MBAPMDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436964BC26B91715002E65BB /* MBAPMDemo.swift */; };
+		437E749A25E3A81B00548A21 /* MBAPMLagTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437E749725E3A81A00548A21 /* MBAPMLagTestViewController.m */; };
+		437E749B25E3A81B00548A21 /* MBAPMCrashTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437E749925E3A81A00548A21 /* MBAPMCrashTestViewController.m */; };
+		43A506EE24CEEDA700AA86F5 /* MBAPMDemoModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A506ED24CEEDA700AA86F5 /* MBAPMDemoModule.m */; };
+		43A506F924CFCE5300AA86F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A506F824CFCE5300AA86F5 /* Main.storyboard */; };
+		43A506FF24CFD5DD00AA86F5 /* MBAPMPageRenderTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A506FD24CFD5DD00AA86F5 /* MBAPMPageRenderTestVC.m */; };
+		43A5070624CFDB5900AA86F5 /* MBAPMPageRenderTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5070424CFDB5900AA86F5 /* MBAPMPageRenderTextVC.m */; };
+		43A5070724CFDB5900AA86F5 /* MBAPMPageRenderTextVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A5070524CFDB5900AA86F5 /* MBAPMPageRenderTextVC.xib */; };
+		43A5070B24CFDB7800AA86F5 /* MBAPMPageRenderHookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5070924CFDB7800AA86F5 /* MBAPMPageRenderHookVC.m */; };
+		43A5070C24CFDB7800AA86F5 /* MBAPMPageRenderHookVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A5070A24CFDB7800AA86F5 /* MBAPMPageRenderHookVC.xib */; };
+		43A5071024CFDBA100AA86F5 /* MBAPMPageRenderManualVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A5070E24CFDBA100AA86F5 /* MBAPMPageRenderManualVC.m */; };
+		43A5071124CFDBA100AA86F5 /* MBAPMPageRenderManualVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A5070F24CFDBA100AA86F5 /* MBAPMPageRenderManualVC.xib */; };
+		5A7B8545B541BF324A6CAA49 /* libPods-MBAPMLib_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55011EDA615292B202F8EC1B /* libPods-MBAPMLib_Example.a */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* MBAPMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* MBAPMAppDelegate.m */; };
+		6003F5A7195388D20070C39A /* MBAPMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* MBAPMViewController.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		BDE53EA026C26D5B00643919 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE53E9F26C26D5B00643919 /* File.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = MBAPMLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		237AAF32110DBC6850553EAA /* Pods-MBAPMLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAPMLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MBAPMLib_Tests/Pods-MBAPMLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B764F50937728015454F387 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		436964BC26B91715002E65BB /* MBAPMDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBAPMDemo.swift; sourceTree = "<group>"; };
+		437E749225E3A77900548A21 /* MBAPMPageRenderTestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBAPMPageRenderTestVC.xib; sourceTree = "<group>"; };
+		437E749625E3A81A00548A21 /* MBAPMCrashTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAPMCrashTestViewController.h; sourceTree = "<group>"; };
+		437E749725E3A81A00548A21 /* MBAPMLagTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAPMLagTestViewController.m; sourceTree = "<group>"; };
+		437E749825E3A81A00548A21 /* MBAPMLagTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAPMLagTestViewController.h; sourceTree = "<group>"; };
+		437E749925E3A81A00548A21 /* MBAPMCrashTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAPMCrashTestViewController.m; sourceTree = "<group>"; };
+		43A506EC24CEEDA700AA86F5 /* MBAPMDemoModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAPMDemoModule.h; sourceTree = "<group>"; };
+		43A506ED24CEEDA700AA86F5 /* MBAPMDemoModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAPMDemoModule.m; sourceTree = "<group>"; };
+		43A506F824CFCE5300AA86F5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		43A506FC24CFD5DD00AA86F5 /* MBAPMPageRenderTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAPMPageRenderTestVC.h; sourceTree = "<group>"; };
+		43A506FD24CFD5DD00AA86F5 /* MBAPMPageRenderTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAPMPageRenderTestVC.m; sourceTree = "<group>"; };
+		43A5070324CFDB5900AA86F5 /* MBAPMPageRenderTextVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAPMPageRenderTextVC.h; sourceTree = "<group>"; };
+		43A5070424CFDB5900AA86F5 /* MBAPMPageRenderTextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAPMPageRenderTextVC.m; sourceTree = "<group>"; };
+		43A5070524CFDB5900AA86F5 /* MBAPMPageRenderTextVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBAPMPageRenderTextVC.xib; sourceTree = "<group>"; };
+		43A5070824CFDB7800AA86F5 /* MBAPMPageRenderHookVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAPMPageRenderHookVC.h; sourceTree = "<group>"; };
+		43A5070924CFDB7800AA86F5 /* MBAPMPageRenderHookVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAPMPageRenderHookVC.m; sourceTree = "<group>"; };
+		43A5070A24CFDB7800AA86F5 /* MBAPMPageRenderHookVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBAPMPageRenderHookVC.xib; sourceTree = "<group>"; };
+		43A5070D24CFDBA100AA86F5 /* MBAPMPageRenderManualVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAPMPageRenderManualVC.h; sourceTree = "<group>"; };
+		43A5070E24CFDBA100AA86F5 /* MBAPMPageRenderManualVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAPMPageRenderManualVC.m; sourceTree = "<group>"; };
+		43A5070F24CFDBA100AA86F5 /* MBAPMPageRenderManualVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBAPMPageRenderManualVC.xib; sourceTree = "<group>"; };
+		51C860D7DF30CAFB0C6B15C6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		55011EDA615292B202F8EC1B /* libPods-MBAPMLib_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBAPMLib_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* MBAPMLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBAPMLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* MBAPMLib-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBAPMLib-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* MBAPMLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBAPMLib-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* MBAPMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAPMAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* MBAPMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAPMAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* MBAPMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAPMViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* MBAPMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAPMViewController.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AE195388D20070C39A /* MBAPMLib_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBAPMLib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CE9FD8A57DC6C9868BC5987 /* Pods-MBAPMLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAPMLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-MBAPMLib_Example/Pods-MBAPMLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A4A6977206603FA5C4DE07B9 /* libPods-MBAPMLib_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MBAPMLib_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66232165817768910B48B14 /* MBAPMLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MBAPMLib.podspec; path = ../MBAPMLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDE53E9E26C26D5A00643919 /* MBAPMLib_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBAPMLib_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		BDE53E9F26C26D5B00643919 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C77F5F7837EAB0A102609FD4 /* Pods-MBAPMLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAPMLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-MBAPMLib_Tests/Pods-MBAPMLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E96EA4517195FE262080A3C0 /* Pods-MBAPMLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBAPMLib_Example.release.xcconfig"; path = "Target Support Files/Pods-MBAPMLib_Example/Pods-MBAPMLib_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				5A7B8545B541BF324A6CAA49 /* libPods-MBAPMLib_Example.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				33A9DCD094AA5A5B253A03AD /* libPods-MBAPMLib_Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39B0934FDA6727E2BF19295E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CE9FD8A57DC6C9868BC5987 /* Pods-MBAPMLib_Example.debug.xcconfig */,
+				E96EA4517195FE262080A3C0 /* Pods-MBAPMLib_Example.release.xcconfig */,
+				237AAF32110DBC6850553EAA /* Pods-MBAPMLib_Tests.debug.xcconfig */,
+				C77F5F7837EAB0A102609FD4 /* Pods-MBAPMLib_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		43A5070124CFDAFA00AA86F5 /* PageRender */ = {
+			isa = PBXGroup;
+			children = (
+				43A506FC24CFD5DD00AA86F5 /* MBAPMPageRenderTestVC.h */,
+				43A506FD24CFD5DD00AA86F5 /* MBAPMPageRenderTestVC.m */,
+				43A5070324CFDB5900AA86F5 /* MBAPMPageRenderTextVC.h */,
+				43A5070424CFDB5900AA86F5 /* MBAPMPageRenderTextVC.m */,
+				43A5070524CFDB5900AA86F5 /* MBAPMPageRenderTextVC.xib */,
+				43A5070824CFDB7800AA86F5 /* MBAPMPageRenderHookVC.h */,
+				43A5070924CFDB7800AA86F5 /* MBAPMPageRenderHookVC.m */,
+				43A5070A24CFDB7800AA86F5 /* MBAPMPageRenderHookVC.xib */,
+				43A5070D24CFDBA100AA86F5 /* MBAPMPageRenderManualVC.h */,
+				43A5070E24CFDBA100AA86F5 /* MBAPMPageRenderManualVC.m */,
+				43A5070F24CFDBA100AA86F5 /* MBAPMPageRenderManualVC.xib */,
+				437E749225E3A77900548A21 /* MBAPMPageRenderTestVC.xib */,
+			);
+			name = PageRender;
+			sourceTree = "<group>";
+		};
+		43A5070224CFDB1200AA86F5 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				43A506EC24CEEDA700AA86F5 /* MBAPMDemoModule.h */,
+				43A506ED24CEEDA700AA86F5 /* MBAPMDemoModule.m */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for MBAPMLib */,
+				6003F5B5195388D20070C39A /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				39B0934FDA6727E2BF19295E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* MBAPMLib_Example.app */,
+				6003F5AE195388D20070C39A /* MBAPMLib_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				55011EDA615292B202F8EC1B /* libPods-MBAPMLib_Example.a */,
+				A4A6977206603FA5C4DE07B9 /* libPods-MBAPMLib_Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for MBAPMLib */ = {
+			isa = PBXGroup;
+			children = (
+				437E749625E3A81A00548A21 /* MBAPMCrashTestViewController.h */,
+				437E749925E3A81A00548A21 /* MBAPMCrashTestViewController.m */,
+				437E749825E3A81A00548A21 /* MBAPMLagTestViewController.h */,
+				437E749725E3A81A00548A21 /* MBAPMLagTestViewController.m */,
+				43A5070224CFDB1200AA86F5 /* Module */,
+				43A5070124CFDAFA00AA86F5 /* PageRender */,
+				6003F59C195388D20070C39A /* MBAPMAppDelegate.h */,
+				6003F59D195388D20070C39A /* MBAPMAppDelegate.m */,
+				6003F5A5195388D20070C39A /* MBAPMViewController.h */,
+				6003F5A6195388D20070C39A /* MBAPMViewController.m */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F594195388D20070C39A /* Supporting Files */,
+				43A506F824CFCE5300AA86F5 /* Main.storyboard */,
+				BDE53E9F26C26D5B00643919 /* File.swift */,
+				BDE53E9E26C26D5A00643919 /* MBAPMLib_Example-Bridging-Header.h */,
+				436964BC26B91715002E65BB /* MBAPMDemo.swift */,
+			);
+			name = "Example for MBAPMLib";
+			path = MBAPMLib;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* MBAPMLib-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* MBAPMLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				A66232165817768910B48B14 /* MBAPMLib.podspec */,
+				51C860D7DF30CAFB0C6B15C6 /* README.md */,
+				3B764F50937728015454F387 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* MBAPMLib_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MBAPMLib_Example" */;
+			buildPhases = (
+				A4CF4B6995579AA23CC8000C /* [CP] Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				B50C167F4F356AB7B0FD3078 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBAPMLib_Example;
+			productName = MBAPMLib;
+			productReference = 6003F58A195388D20070C39A /* MBAPMLib_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* MBAPMLib_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "MBAPMLib_Tests" */;
+			buildPhases = (
+				FD87F9557CF4D3BE5A1C6B81 /* [CP] Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+			);
+			name = MBAPMLib_Tests;
+			productName = MBAPMLibTests;
+			productReference = 6003F5AE195388D20070C39A /* MBAPMLib_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MBAPM;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = seal;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 33NTY77JS5;
+						LastSwiftMigration = 1250;
+						ProvisioningStyle = Automatic;
+					};
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "MBAPMLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* MBAPMLib_Example */,
+				6003F5AD195388D20070C39A /* MBAPMLib_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A5070724CFDB5900AA86F5 /* MBAPMPageRenderTextVC.xib in Resources */,
+				43A506F924CFCE5300AA86F5 /* Main.storyboard in Resources */,
+				43A5070C24CFDB7800AA86F5 /* MBAPMPageRenderHookVC.xib in Resources */,
+				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				43A5071124CFDBA100AA86F5 /* MBAPMPageRenderManualVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4CF4B6995579AA23CC8000C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MBAPMLib_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B50C167F4F356AB7B0FD3078 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MBAPMLib_Example/Pods-MBAPMLib_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AAChartKit/AAChartKitLib.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/AddressSelection.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/CommonAlert.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/CommonResource.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/CityPicker.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/CommonPicker.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/CreditPoint.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/Filter.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/GoodsRegion.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/ImagePicker.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/Loading.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/ModalView.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/RegionPicker.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBCommonUILib/ViewController.bundle",
+				"${PODS_ROOT}/MBConfigCenter/MBConfigCenter/Assets/YMMConfigCenterBundle.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBFoundation/MBFoundation.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBLocationLib/MBLocationLib.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBSecurityLib/HCBSecurity_Bundle_Main.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBStorageLib/MBStorageLib.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBUIKit/AgreementView.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBUIKit/BaseUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBUIKit/UIFilter.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBUIKit/KeyBoard.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MBUIKit/MBRefresh.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/YMMImagePicker/MBCameraResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/YMMImagePicker/YMMImagePickerResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/YMMNetwork/YMMNetwork.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AAChartKitLib.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AddressSelection.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CommonAlert.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CommonResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CityPicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CommonPicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CreditPoint.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Filter.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoodsRegion.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Loading.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ModalView.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RegionPicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ViewController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YMMConfigCenterBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBFoundation.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBLocationLib.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HCBSecurity_Bundle_Main.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBStorageLib.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AgreementView.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BaseUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UIFilter.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KeyBoard.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MBCameraResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YMMImagePickerResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YMMNetwork.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MBAPMLib_Example/Pods-MBAPMLib_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD87F9557CF4D3BE5A1C6B81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MBAPMLib_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A5070624CFDB5900AA86F5 /* MBAPMPageRenderTextVC.m in Sources */,
+				43A506FF24CFD5DD00AA86F5 /* MBAPMPageRenderTestVC.m in Sources */,
+				43A506EE24CEEDA700AA86F5 /* MBAPMDemoModule.m in Sources */,
+				6003F59E195388D20070C39A /* MBAPMAppDelegate.m in Sources */,
+				437E749B25E3A81B00548A21 /* MBAPMCrashTestViewController.m in Sources */,
+				6003F5A7195388D20070C39A /* MBAPMViewController.m in Sources */,
+				43A5071024CFDBA100AA86F5 /* MBAPMPageRenderManualVC.m in Sources */,
+				436964BD26B91715002E65BB /* MBAPMDemo.swift in Sources */,
+				43A5070B24CFDB7800AA86F5 /* MBAPMPageRenderHookVC.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+				BDE53EA026C26D5B00643919 /* File.swift in Sources */,
+				437E749A25E3A81B00548A21 /* MBAPMLagTestViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* MBAPMLib_Example */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71719F9E1E33DC2100824A3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE9FD8A57DC6C9868BC5987 /* Pods-MBAPMLib_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33NTY77JS5;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBAPMLib/MBAPMLib-Prefix.pch";
+				INFOPLIST_FILE = "MBAPMLib/MBAPMLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mb.demo.apm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MBAPMLib/MBAPMLib_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96EA4517195FE262080A3C0 /* Pods-MBAPMLib_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33NTY77JS5;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MBAPMLib/MBAPMLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					NS_BLOCK_ASSERTIONS,
+				);
+				INFOPLIST_FILE = "MBAPMLib/MBAPMLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mb.demo.apm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MBAPMLib/MBAPMLib_Example-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 237AAF32110DBC6850553EAA /* Pods-MBAPMLib_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MBAPMLib_Example.app/MBAPMLib_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77F5F7837EAB0A102609FD4 /* Pods-MBAPMLib_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MBAPMLib_Example.app/MBAPMLib_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "MBAPMLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "MBAPMLib_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "MBAPMLib_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}

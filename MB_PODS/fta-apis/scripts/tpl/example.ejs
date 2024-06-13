@@ -1,0 +1,20 @@
+/**
+  * title: '<%= upname %> <%= zh_name %>'
+  * componentName: '<%= upname %>'
+  * des: '<%= desc || zh_name %>'
+  * previewUrl: 'components/<%= type %>/<%= name %>'
+  * materialType: 'component'
+  * package: '@fta/components-<%= name %>'
+  */
+import React from 'react'
+import { Layout } from '@fta/components/common/display'
+import { View, Text } from '@tarojs/components'
+
+
+export default () => (
+  <Layout title='<%= zh_name %>' <% if(cross){ %>qrcode='components/${type}/${name}/index'<%}%> style={{ flex: 1 }}>
+    <View><Text>Component：<% if(cross && type != 'pro'){ %> <%= upname %> <% } else { %> @fta/components-<%= name %> <% } %>  <%= zh_name %></Text></View>
+    <View><Text>Author：<%= authorInfo.name %> {'<'}<%= author %>@amh-group.com{'>'}</Text></View>
+    <View><Text>Guide: https://fta.amh-group.com/view/#/guide/contributing/dev-fta-view</Text></View>
+  </Layout>
+)

@@ -1,0 +1,36 @@
+.__dumi-default {
+  &-platform {
+    position: relative;
+    margin-top: 4px;
+    white-space: nowrap;
+
+    &-version {
+      display: inline-block;
+      margin-right: 16px;
+      background-color: #f4f5f8;
+      font-size: 14px;
+      color: #677288;
+      height: 28px;
+      line-height: 28px;
+      padding: 0 24px;
+    }
+
+    &-item {
+      & + & {
+        margin-left: 24px;
+      }
+
+      &__img {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 4px;
+      }
+
+      &__text {
+        font-size: 14px;
+        color: #424f6b;
+      }
+    }
+  }
+}

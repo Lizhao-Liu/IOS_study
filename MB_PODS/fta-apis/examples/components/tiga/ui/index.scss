@@ -1,0 +1,96 @@
+.my-button.at-button {
+  color: red;
+}
+
+.demo-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+
+  .at-form {
+    padding-left: 0;
+  }
+}
+
+.btn--hover {
+  opacity: 0.1;
+  background: red;
+}
+
+.btn-item {
+  margin-bottom: 20px;
+  margin-right: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .subitem {
+    margin-left: 24px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.btn-text {
+  color: white;
+}
+
+$color-brand: #0154fe;
+
+.fta-custom-button {
+  &--primary {
+    background-color: $color-brand;
+  }
+
+  &--default {
+    border-color: $color-brand;
+
+    &__text {
+      color: $color-brand;
+    }
+  }
+
+  &-text {
+    &__text {
+      color: $color-brand;
+    }
+
+    &:active {
+      .fta-custom-button-text__text {
+        color: $color-brand;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.fta-custom-icon {
+  width: 36px;
+  height: 36px;
+
+  &--mini {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.button-test {
+  align-self: flex-start;
+  margin: 0 0 0 10px;
+  padding: 8px 8px 8px 8px;
+  height: 56px;
+  // width: 158px;
+  border-radius: 8px;
+  border: 1px solid #999999;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

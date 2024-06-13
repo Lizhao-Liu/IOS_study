@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "resolveJsonModule": true,
+    "target": "es5",
+    "module": "ESNext",
+    "downlevelIteration": true,
+    "baseUrl": ".",
+    "types": ["node"]
+  },
+  "include": ["src/**/*", "types/*", "../../../types/global.d.ts"],
+  "compileOnSave": false,
+  "exclude": ["node_modules/*", "packages/dist/*"]
+}

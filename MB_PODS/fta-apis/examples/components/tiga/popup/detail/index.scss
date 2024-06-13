@@ -1,0 +1,26 @@
+@import '~@fta/components/style/mixins/index.scss';
+
+@mixin flex($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin font($size: 28px, $color: #333, $weight: 400, $line-height: $size * 1.2) {
+  font-size: $size;
+  color: $color;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+.props-list {
+  &-container {
+    @include flex();
+    margin-top: 30px;
+    /* #ifndef rn */
+    overflow: auto;
+    /* #endif */
+    /* #ifndef alipay rn*/
+    overflow: auto !important;
+    /* #endif */
+    color: red;
+  }
+}

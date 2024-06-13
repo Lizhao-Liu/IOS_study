@@ -1,0 +1,533 @@
+@font-face {
+  font-family: "ftafont"; /* Project id 3850404 */
+  src: url('iconfont.woff2?t=1676021460503') format('woff2'),
+       url('iconfont.woff?t=1676021460503') format('woff'),
+       url('iconfont.ttf?t=1676021460503') format('truetype');
+}
+
+.ftafont {
+  font-family: "ftafont" !important;
+  font-size: 16px;
+  line-height: 1;
+  font-style: normal;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fta-icon-CheckCircleOutlined:before {
+  content: "\e6ac";
+}
+
+.fta-icon-UserSingleOutlined:before {
+  content: "\e6aa";
+}
+
+.fta-icon-UserSingleFilled:before {
+  content: "\e6ab";
+}
+
+.fta-icon-RedPacketFilled:before {
+  content: "\e6a6";
+}
+
+.fta-icon-RedPacketOutlined:before {
+  content: "\e6a7";
+}
+
+.fta-icon-GoldCoinFilled:before {
+  content: "\e6a8";
+}
+
+.fta-icon-GoldCoinOutlined:before {
+  content: "\e6a9";
+}
+
+.fta-icon-CarDeliverFilled:before {
+  content: "\e69a";
+}
+
+.fta-icon-CarDeliverOutlined:before {
+  content: "\e69b";
+}
+
+.fta-icon-CarTransportFilled:before {
+  content: "\e69c";
+}
+
+.fta-icon-CarTransportOutlined:before {
+  content: "\e69d";
+}
+
+.fta-icon-CarTruckFilled:before {
+  content: "\e69e";
+}
+
+.fta-icon-CarTruckOutlined:before {
+  content: "\e69f";
+}
+
+.fta-icon-GoodsDistributeOutlined:before {
+  content: "\e6a0";
+}
+
+.fta-icon-RouteLocateFilled:before {
+  content: "\e6a1";
+}
+
+.fta-icon-RouteLocateOutlined:before {
+  content: "\e6a2";
+}
+
+.fta-icon-GoodsDistributeFilled:before {
+  content: "\e6a3";
+}
+
+.fta-icon-RouteNavigateFilled:before {
+  content: "\e6a4";
+}
+
+.fta-icon-RouteNavigateOutlined:before {
+  content: "\e6a5";
+}
+
+.fta-icon-AudioFilled:before {
+  content: "\e688";
+}
+
+.fta-icon-AudioOutlined:before {
+  content: "\e689";
+}
+
+.fta-icon-BellFilled:before {
+  content: "\e68a";
+}
+
+.fta-icon-BellOutlined:before {
+  content: "\e68b";
+}
+
+.fta-icon-CallrecordFilled:before {
+  content: "\e68c";
+}
+
+.fta-icon-CallrecordOutlined:before {
+  content: "\e68d";
+}
+
+.fta-icon-CameraOutlined:before {
+  content: "\e68e";
+}
+
+.fta-icon-CameraFilled:before {
+  content: "\e68f";
+}
+
+.fta-icon-CustomerServiceFilled:before {
+  content: "\e690";
+}
+
+.fta-icon-CustomerServiceOutlined:before {
+  content: "\e691";
+}
+
+.fta-icon-HornFilled:before {
+  content: "\e692";
+}
+
+.fta-icon-HornOutlined:before {
+  content: "\e693";
+}
+
+.fta-icon-ImageFilled:before {
+  content: "\e694";
+}
+
+.fta-icon-ImageOutlined:before {
+  content: "\e695";
+}
+
+.fta-icon-PhoneFilled:before {
+  content: "\e696";
+}
+
+.fta-icon-PhoneOutlined:before {
+  content: "\e697";
+}
+
+.fta-icon-WechatFilled:before {
+  content: "\e698";
+}
+
+.fta-icon-WechatOutlined:before {
+  content: "\e699";
+}
+
+.fta-icon-KeyboardFilled:before {
+  content: "\e682";
+}
+
+.fta-icon-KeyboardOutlined:before {
+  content: "\e683";
+}
+
+.fta-icon-VoiceFilled:before {
+  content: "\e686";
+}
+
+.fta-icon-VoiceOutlined:before {
+  content: "\e687";
+}
+
+.fta-icon-BankcardFilled:before {
+  content: "\e676";
+}
+
+.fta-icon-BankcardOutlined:before {
+  content: "\e677";
+}
+
+.fta-icon-CouponOutlined:before {
+  content: "\e678";
+}
+
+.fta-icon-CouponFilled:before {
+  content: "\e679";
+}
+
+.fta-icon-GiftFilled:before {
+  content: "\e67a";
+}
+
+.fta-icon-GiftOutlined:before {
+  content: "\e67b";
+}
+
+.fta-icon-WalletFilled:before {
+  content: "\e680";
+}
+
+.fta-icon-WalletOutlined:before {
+  content: "\e681";
+}
+
+.fta-icon-CalendarFilled:before {
+  content: "\e65c";
+}
+
+.fta-icon-CalendarOutlined:before {
+  content: "\e65d";
+}
+
+.fta-icon-ClassifyFilled:before {
+  content: "\e65e";
+}
+
+.fta-icon-ClassifyOutlined:before {
+  content: "\e65f";
+}
+
+.fta-icon-DeleteFilled:before {
+  content: "\e660";
+}
+
+.fta-icon-DeleteOutlined:before {
+  content: "\e661";
+}
+
+.fta-icon-DislikeFilled:before {
+  content: "\e662";
+}
+
+.fta-icon-DislikeOutlined:before {
+  content: "\e663";
+}
+
+.fta-icon-EditFilled:before {
+  content: "\e664";
+}
+
+.fta-icon-EditOutlined:before {
+  content: "\e665";
+}
+
+.fta-icon-EvaluateFilled:before {
+  content: "\e666";
+}
+
+.fta-icon-EvaluateOutlined:before {
+  content: "\e667";
+}
+
+.fta-icon-EyeFilled:before {
+  content: "\e668";
+}
+
+.fta-icon-EyeOutlined:before {
+  content: "\e669";
+}
+
+.fta-icon-FormFilled:before {
+  content: "\e640";
+}
+
+.fta-icon-FormOutlined:before {
+  content: "\e641";
+}
+
+.fta-icon-HeartFilled:before {
+  content: "\e642";
+}
+
+.fta-icon-HeartOutlined:before {
+  content: "\e643";
+}
+
+.fta-icon-HistoryOutlined:before {
+  content: "\e644";
+}
+
+.fta-icon-LikeFilled:before {
+  content: "\e645";
+}
+
+.fta-icon-LikeOutlined:before {
+  content: "\e646";
+}
+
+.fta-icon-MailFilled:before {
+  content: "\e647";
+}
+
+.fta-icon-MailOutlined:before {
+  content: "\e648";
+}
+
+.fta-icon-MessageFilled:before {
+  content: "\e649";
+}
+
+.fta-icon-MessageOutlined:before {
+  content: "\e64a";
+}
+
+.fta-icon-ProgressFilled:before {
+  content: "\e64b";
+}
+
+.fta-icon-ProgressOutlined:before {
+  content: "\e64c";
+}
+
+.fta-icon-RuleFilled:before {
+  content: "\e64d";
+}
+
+.fta-icon-RuleOutlined:before {
+  content: "\e64e";
+}
+
+.fta-icon-SealFilled:before {
+  content: "\e64f";
+}
+
+.fta-icon-SealOutlined:before {
+  content: "\e650";
+}
+
+.fta-icon-SearchFilled:before {
+  content: "\e651";
+}
+
+.fta-icon-SearchOutlined:before {
+  content: "\e652";
+}
+
+.fta-icon-SendFilled:before {
+  content: "\e653";
+}
+
+.fta-icon-SendOutlined:before {
+  content: "\e654";
+}
+
+.fta-icon-SettingOutlined:before {
+  content: "\e655";
+}
+
+.fta-icon-SettingFilled:before {
+  content: "\e656";
+}
+
+.fta-icon-ShareOutlined:before {
+  content: "\e657";
+}
+
+.fta-icon-StarFilled:before {
+  content: "\e658";
+}
+
+.fta-icon-StarOutlined:before {
+  content: "\e659";
+}
+
+.fta-icon-StudyFilled:before {
+  content: "\e65a";
+}
+
+.fta-icon-StudyOutlined:before {
+  content: "\e65b";
+}
+
+.fta-icon-ArriveFilled:before {
+  content: "\e611";
+}
+
+.fta-icon-ArriveOutlined:before {
+  content: "\e612";
+}
+
+.fta-icon-CheckFilled:before {
+  content: "\e613";
+}
+
+.fta-icon-ClockFilled:before {
+  content: "\e614";
+}
+
+.fta-icon-ClockOutlined:before {
+  content: "\e615";
+}
+
+.fta-icon-CloseFilled:before {
+  content: "\e616";
+}
+
+.fta-icon-CloseOutlined:before {
+  content: "\e617";
+}
+
+.fta-icon-DownFilled:before {
+  content: "\e618";
+}
+
+.fta-icon-DownOutlined:before {
+  content: "\e619";
+}
+
+.fta-icon-ExclamationFilled:before {
+  content: "\e61a";
+}
+
+.fta-icon-ExclamationOutlined:before {
+  content: "\e61b";
+}
+
+.fta-icon-InfoFilled:before {
+  content: "\e61c";
+}
+
+.fta-icon-InfoOutlined:before {
+  content: "\e61d";
+}
+
+.fta-icon-LeftFilled:before {
+  content: "\e61e";
+}
+
+.fta-icon-LeftOutlined:before {
+  content: "\e61f";
+}
+
+.fta-icon-MenuFilled:before {
+  content: "\e620";
+}
+
+.fta-icon-MenuOutlined:before {
+  content: "\e621";
+}
+
+.fta-icon-CheckOutlined:before {
+  content: "\e622";
+}
+
+.fta-icon-MinusCircleFilled:before {
+  content: "\e623";
+}
+
+.fta-icon-MinusCircleOutlined:before {
+  content: "\e624";
+}
+
+.fta-icon-MinusOutlined:before {
+  content: "\e625";
+}
+
+.fta-icon-MoreFilled:before {
+  content: "\e626";
+}
+
+.fta-icon-MoreOutlined:before {
+  content: "\e627";
+}
+
+.fta-icon-PlusCircleFilled:before {
+  content: "\e628";
+}
+
+.fta-icon-PlusCircleOutlined:before {
+  content: "\e629";
+}
+
+.fta-icon-PlusOutlined:before {
+  content: "\e62a";
+}
+
+.fta-icon-QuestionFilled:before {
+  content: "\e62b";
+}
+
+.fta-icon-QuestionOutlined:before {
+  content: "\e62c";
+}
+
+.fta-icon-RedoFilled:before {
+  content: "\e62d";
+}
+
+.fta-icon-RedoOutlined:before {
+  content: "\e62e";
+}
+
+.fta-icon-RightFilled:before {
+  content: "\e62f";
+}
+
+.fta-icon-RightOutlined:before {
+  content: "\e630";
+}
+
+.fta-icon-RollbackFilled:before {
+  content: "\e631";
+}
+
+.fta-icon-RollbackOutlined:before {
+  content: "\e632";
+}
+
+.fta-icon-TransformFilled:before {
+  content: "\e633";
+}
+
+.fta-icon-TransformOutlined:before {
+  content: "\e634";
+}
+
+.fta-icon-UpFilled:before {
+  content: "\e635";
+}
+
+.fta-icon-UpOutlined:before {
+  content: "\e636";
+}
+

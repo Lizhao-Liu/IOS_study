@@ -1,0 +1,19 @@
+{
+  "tabWidth": 2,
+  "jsxSingleQuote": true,
+  "bracketSameLine": true,
+  "printWidth": 100,
+  "singleQuote": true,
+  "semi": false,
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ],
+  "arrowParens": "always",
+  "editorConfig": true
+}

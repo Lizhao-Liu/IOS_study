@@ -1,0 +1,42 @@
+[
+    {
+        "path": "tms.jsbundle",
+        "md5": "1a9faaf059ca4d201a7843a6bffef4b5"
+    },
+    {
+        "path": "pages.json",
+        "md5": "6ba4b81557ba6d6cafe99805cc428e1e"
+    },
+    {
+        "path": "info.json",
+        "md5": "9343188635ba31bff91e99d88824425f"
+    },
+    {
+        "path": "assets/sentry.json",
+        "md5": "544faeeb620fc0bf48aec2ffdd33d3ee"
+    },
+    {
+        "path": "assets/node_modules/react-navigation-stack/lib/module/vendor/views/assets/back-icon@3x.png",
+        "md5": "0ea69b5077e7c4696db85dbcba75b0e1"
+    },
+    {
+        "path": "assets/node_modules/react-navigation-stack/lib/module/vendor/views/assets/back-icon-mask.png",
+        "md5": "5223c8d9b0d08b82a5670fb5f71faf78"
+    },
+    {
+        "path": "assets/node_modules/react-navigation-stack/lib/module/vendor/views/assets/back-icon@2x.png",
+        "md5": "a132ecc4ba5c1517ff83c0fb321bc7fc"
+    },
+    {
+        "path": "assets/node_modules/react-navigation-stack/lib/module/vendor/views/assets/back-icon.png",
+        "md5": "7d40544b395c5949f4646f5e150fe020"
+    },
+    {
+        "path": "assets/node_modules/@ymm/rn-lib/src/CommonUI/YMMLoading/icon_loading.png",
+        "md5": "0cc791beedb726f35be1dc29cb68d7b8"
+    },
+    {
+        "path": "assets/src/pages/waybill-manage/components/ScreenDrawer/multipleCity.json",
+        "md5": "ec4f9a804863e819fd6da916e60a4111"
+    }
+]

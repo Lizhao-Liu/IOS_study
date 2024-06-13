@@ -1,0 +1,52 @@
+{
+  "name": "@fta/tiga-<%= name %>",
+  "version": "<%= tigaUtilVersion %>",
+  "description": "<%= zh_name %>",
+  "source": "src/index.tsx",
+  "main": "dist",
+  "main:thresh": "dist/thresh/index.js",
+  "main:mw": "dist/mw/index.js",
+  "main:h5": "dist/h5/index.js",
+  "main:logic": "dist/logic/index.js",
+  "types": "dist/types",
+  "platforms": [<%- support.map(item => `"${item}"`).join(","); %>],
+  "sideEffects": [
+    "*.scss",
+    "*.css"
+  ],
+  "keywords": [
+    "taro",
+    "<%= name %>"
+  ],
+  "author": "<%= authorInfo.name %> <<%= author %>@amh-group.com>",
+  "dingTalk": "<%= authorInfo.dingTalk %>",
+  "homepage": "http://fta.amh-group.com/view/#/components/<%= type %>/<%= name %>",
+  "license": "MIT",
+  "scripts": {
+    "build:lib-list": "node ../../../scripts/build/getLibList.js --api=<%= name %>",
+    "build": "rimraf dist && npm run build:lib-list && node ../../../scripts/build/build.js --api=<%= name %>"
+  },
+  "dependencies": {
+    "@fta/tiga-util": "<%= tigaUtilVersion %>"
+  },
+  "devDependencies": {
+    "rollup": "^2.3.1",
+    "rimraf": "^3.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "@tarojs/components": "~3.3.0",
+    "@tarojs/react": "~3.3.0",
+    "@tarojs/taro": "~3.3.0",
+    "@tarojs/cli": "~3.3.0",
+    "@tarojs/runtime": "~3.3.0"
+  },
+  "peerDependencies": {
+    "@tarojs/components": ">=3",
+    "@tarojs/react": ">=3",
+    "@tarojs/taro": ">=3",
+    "@tarojs/runtime": ">=3",
+    "taro-ui": ">=3",
+    "react": ">=16.13.0",
+    "react-dom": ">=16.13.0"
+  }
+}
