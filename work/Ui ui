@@ -1,0 +1,448 @@
+
+
+
+
+# Ui ui
+
+| Thresh | 微前端 | 微信小程序 |
+| ------ | ------ | ---------- |
+| **✓**  | **✓**  | ✘          |
+
+## 介绍
+
+ui
+
+## 引用
+
+```jsx
+import { Tiga } from '@fta/tiga'
+
+
+Tiga.UI
+```
+
+## 示例
+
+```tsx
+import { Button, DemoBlock, Layout } from '@fta/components/common/display'
+import { useThreshContext } from '@fta/hooks'
+import Tiga from '@fta/tiga'
+import Taro from '@tarojs/taro'
+import React from 'react'
+import './index.scss'
+
+
+export default () => {
+  const context = useThreshContext()
+  return (
+    <Layout title='UI' qrcode='components/tiga/ui/index'>
+      <DemoBlock label='show loading without mask' pure>
+        <Button
+          onClick={() =>
+            Taro.showLoading({
+              title: '加载中',
+              mask: false,
+              context,
+              complete(res) {
+                console.log('complete:', res)
+              },
+              fail(res) {
+                console.log('fail:', res)
+              },
+              success(res) {
+                console.log('success:', res)
+              },
+            })
+          }>
+          show loading
+        </Button>
+      </DemoBlock>
+      <DemoBlock label='show loading with mask' pure>
+        <Button
+          onClick={() =>
+            Taro.showLoading({
+              title: 'loading 自动消失',
+              mask: true,
+              context,
+            })
+              .then((res) => {
+                setTimeout(() => {
+                  Taro.hideLoading({ context })
+                  console.log(res)
+                }, 5000)
+              })
+              .catch((e) => {
+                console.log('error' + e)
+                Taro.hideLoading({ context })
+              })
+          }>
+          show loading
+        </Button>
+      </DemoBlock>
+
+
+      <DemoBlock label='hide loading' pure>
+        <Button onClick={() => Taro.hideLoading({ context })}>hide loading</Button>
+      </DemoBlock>
+
+
+      <DemoBlock label='show toast near the bottom without mask' pure>
+        <Button
+          onClick={() =>
+            Taro.showToast({
+              title: '居下的toast',
+              mask: false,
+              gravity: 2,
+              context,
+              complete(res) {
+                console.log('complete:', res)
+              },
+              fail(res) {
+                console.log('fail:', res)
+              },
+              success(res) {
+                console.log('success:', res)
+              },
+            }).catch((e) => {
+              console.log(e)
+            })
+          }>
+          show toast
+        </Button>
+      </DemoBlock>
+      <DemoBlock label='show toast with mask' pure>
+        <Button
+          onClick={() =>
+            Taro.showToast({
+              title: '居中的toast',
+              mask: true,
+              duration: 3000,
+              icon: 'success',
+              context,
+              complete(res) {
+                console.log('complete:', res)
+              },
+              fail(res) {
+                console.log('fail:', res)
+              },
+              success(res) {
+                console.log('success:', res)
+              },
+            }).catch((e) => {
+              console.log(e)
+            })
+          }>
+          show toast
+        </Button>
+      </DemoBlock>
+
+
+      <DemoBlock label='hide toast' pure>
+        <Button onClick={() => Taro.hideToast({ context })}>hide toast</Button>
+      </DemoBlock>
+
+
+      <DemoBlock label='show action sheet with two options' pure>
+        <Button
+          onClick={() =>
+            Taro.showActionSheet({
+              itemList: ['test 1', 'test 2'],
+              alertText: 'test',
+              context,
+              complete(res) {
+                console.log('complete:', res)
+              },
+              fail(res) {
+                console.log('fail:', res)
+              },
+              success(res) {
+                console.log('success:', res)
+              },
+            }).catch((e) => {
+              console.log(e)
+            })
+          }>
+          show action sheet
+        </Button>
+      </DemoBlock>
+
+
+      <DemoBlock label='show modal' pure>
+        <Button
+          onClick={() =>
+            Taro.showModal({
+              content: '描述文案',
+              title: '对话框标题',
+              showCancel: true,
+              context,
+              complete(res) {
+                console.log('complete:', res)
+              },
+              fail(res) {
+                console.log('fail:', res)
+              },
+              success(res) {
+                console.log('success:', res)
+              },
+            })
+          }>
+          show modal
+        </Button>
+      </DemoBlock>
+      <DemoBlock label='show info dialog' pure>
+        <Button
+          onClick={() =>
+            Tiga.UI.showInfoDialog({
+              content: '描述文案',
+              title: '对话框标题',
+              context,
+              buttons: [
+                {
+                  text: '选项一',
+                  color: '#000000',
+                },
+                {
+                  text: '选项二',
+                  color: '#576B95',
+                },
+              ],
+              showCloseBtn: true,
+              complete(res) {
+                console.log('complete:', res)
+              },
+              fail(res) {
+                console.log('fail:', res)
+              },
+              success(res) {
+                console.log('success:', res)
+              },
+              buttonOrientation: 1,
+              canceledOnTouchOutside: true,
+            })
+          }>
+          show info dialog
+        </Button>
+      </DemoBlock>
+      <DemoBlock label='show status dialog' pure>
+        <Button
+          onClick={() =>
+            Tiga.UI.showStatusDialog({
+              content: '描述文案',
+              title: '对话框标题',
+              context,
+              buttons: [
+                {
+                  text: '知道了',
+                },
+              ],
+              statusIcon: 'https://imagecdn.ymm56.com/ymmfile/static/image/trade/success.png',
+              buttonOrientation: 0,
+              canceledOnTouchOutside: true,
+              complete(res) {
+                console.log('complete:', res)
+              },
+              fail(res) {
+                console.log('fail:', res)
+              },
+              success(res) {
+                console.log('success:', res)
+              },
+            })
+          }>
+          show status dialog
+        </Button>
+      </DemoBlock>
+    </Layout>
+  )
+}
+```
+
+<iframe title="dumi-previewer" src="file:///Users/admin/Desktop/fta-apis/dist/index.html#/~demos/tiga-ui" style="margin: 0px; padding: 0px; box-sizing: border-box; flex: 1 1 0%; border: 0px;"></iframe>
+
+
+
+
+
+## API
+
+
+
+### showInfoDialog
+
+| 属性名                 | 描述                                             | 类型                                                         | 默认值   |
+| ---------------------- | ------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| title                  | 弹窗的标题                                       | `string`                                                     | `(必选)` |
+| content                | 弹窗的内容                                       | `string`                                                     | `--`     |
+| contentStyle           | 弹窗的内容样式                                   | `DialogContentStyle`                                         | `--`     |
+| buttons                | 弹窗的按钮数组                                   | `DialogButton[]`                                             | `(必选)` |
+| buttonOrientation      | 弹窗的按钮排列方式                               | `DialogButtonOrientation`                                    | `--`     |
+| showCloseBtn           | 是否显示弹窗右上角关闭按钮                       | `boolean`                                                    | `--`     |
+| canceledOnTouchOutside | 点击外部区域是否可以关闭弹窗                     | `boolean`                                                    | `--`     |
+| success                | 接口调用成功的回调函数                           | `(result: DialogSuccessCallbackResult) => void`              | `--`     |
+| context                | 页面context                                      | `any`                                                        | `--`     |
+| fail                   | 接口调用失败的回调函数                           | `(res: CallbackResult | TaroGeneral.CallbackResult) => void` | `--`     |
+| complete               | 接口调用结束的回调函数（调用成功、失败都会执行） | `(res: CallbackResult | TaroGeneral.CallbackResult) => void` | `--`     |
+
+### showStatusDialog
+
+| 属性名                 | 描述                                             | 类型                                                         | 默认值   |
+| ---------------------- | ------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| statusIcon             | 反馈类弹窗icon url                               | `string`                                                     | `--`     |
+| title                  | 弹窗的标题                                       | `string`                                                     | `(必选)` |
+| content                | 弹窗的内容                                       | `string`                                                     | `--`     |
+| contentStyle           | 弹窗的内容样式                                   | `DialogContentStyle`                                         | `--`     |
+| buttons                | 弹窗的按钮数组                                   | `DialogButton[]`                                             | `(必选)` |
+| buttonOrientation      | 弹窗的按钮排列方式                               | 0 ｜ 1                                                       | 0        |
+| showCloseBtn           | 是否显示弹窗右上角关闭按钮                       | `boolean`                                                    | `--`     |
+| canceledOnTouchOutside | 点击外部区域是否可以关闭弹窗                     | `boolean`                                                    | `--`     |
+| success                | 接口调用成功的回调函数                           | `(result: DialogSuccessCallbackResult) => void`              | `--`     |
+| context                | 页面context                                      | `any`                                                        | `--`     |
+| fail                   | 接口调用失败的回调函数                           | `(res: CallbackResult | TaroGeneral.CallbackResult) => void` | `--`     |
+| complete               | 接口调用结束的回调函数（调用成功、失败都会执行） | `(res: CallbackResult | TaroGeneral.CallbackResult) => void` | `--`     |
+
+
+
+**DialogContentStyle**
+
+| 属性名            | 描述                                                         | 类型       | 默认值    |
+| ----------------- | ------------------------------------------------------------ | ---------- | --------- |
+| contentColor      | 弹窗的内容颜色16进制字符串                                   | `string`   | `#666666` |
+| contentAlignment  | 弹窗内容的横向对齐方式 可选值： - 0: 居中对齐; - 1: 左对齐;  - 2: 右对齐 | 0 \| 1 \|2 | `0`       |
+| maxLinesOfContent | 弹窗的内容最大行数                                           | `number`   | `3`       |
+
+
+
+**DialogButton**
+
+| 属性名 | 描述                    | 类型     | 默认值    |
+| ------ | ----------------------- | -------- | --------- |
+| text   | 按钮的文字              | `string` | `--`      |
+| color  | 按钮的颜色 16进制字符串 | `string` | `#000000` |
+
+
+
+**DialogButtonOrientation** 
+
+| 可选值     | 描述     |
+| ---------- | -------- |
+| 0 （默认） | 横向排列 |
+| 1          | 竖向排列 |
+
+
+
+**成功返回值 CallbackResult.data**
+
+| 属性名    | 描述                | 类型      | 默认值 |
+| --------- | ------------------- | --------- | ------ |
+| dismissed | 弹窗是否被关闭      | `boolean` | `--`   |
+| index     | 用户点击的按钮index | `number`  | `--`   |
+
+
+
+
+
+**SuccessCallbackResult**
+
+| 属性名   | 描述                                                         | 类型     | 默认值 |
+| -------- | ------------------------------------------------------------ | -------- | ------ |
+| tapIndex | 用户点击的按钮序号，从上到下的顺序，从0开始, -返回1表示点击了取消 | `number` | `--`   |
+| errMsg   | 调用结果                                                     | `string` | `--`   |
+
+
+
+---
+
+**Taro API 拓展**
+
+
+
+### showLoading
+
+| 属性名   | 描述                                                | 类型                            | 默认值   |
+| -------- | --------------------------------------------------- | ------------------------------- | -------- |
+| title    | 提示的内容, 最多展示7个字符                         | `string`                        | ’加载中‘ |
+| complete | 接口调用结束的回调函数（调用成功、失败都会执行）    | `(res: CallbackResult) => void` | `--`     |
+| fail     | 接口调用失败的回调函数                              | `(res: CallbackResult) => void` | `--`     |
+| mask     | 是否显示透明蒙层，防止触摸穿透                      | `boolean`                       | `--`     |
+| success  | 接口调用成功的回调函数                              | `(res: CallbackResult) => void` | `--`     |
+| context  | 页面context;  仅在app端内生效                       | `any`                           | `--`     |
+| delay    | loading延迟显示的等待时长，单位ms;  仅在app端内生效 | `number`                        | 0        |
+
+
+
+### hideLoading
+
+| 属性名   | 描述                                             | 类型                            | 默认值 |
+| -------- | ------------------------------------------------ | ------------------------------- | ------ |
+| complete | 接口调用结束的回调函数（调用成功、失败都会执行） | `(res: CallbackResult) => void` | `--`   |
+| fail     | 接口调用失败的回调函数                           | `(res: CallbackResult) => void` | `--`   |
+| success  | 接口调用成功的回调函数                           | `(res: CallbackResult) => void` | `--`   |
+| context  | 页面context;  仅在app端内生效                    | `any`                           | `--`   |
+
+
+
+### showToast
+
+| 属性名    | 描述                                                         | 类型                                       | 默认值   |
+| --------- | ------------------------------------------------------------ | ------------------------------------------ | -------- |
+| title     | 提示的内容                                                   | `string`                                   | `(必选)` |
+| complete  | 接口调用结束的回调函数（调用成功、失败都会执行）             | `(res: CallbackResult) => void`            | `--`     |
+| duration  | 提示的延迟时间                                               | `number`                                   | `--`     |
+| fail      | 接口调用失败的回调函数                                       | `(res: CallbackResult) => void`            | `--`     |
+| icon      | 图标 可选值： - 'success': 显示成功图标; - 'error': 显示失败图标;  - 'none': 不显示图标 - 'loading': app端内不支持, 建议使用showLoading; | `"success" | "error" | "loading" | "none"` | `--`     |
+| image     | 自定义图标的本地路径，image 的优先级高于 icon                | `string`                                   | `--`     |
+| mask      | 是否显示透明蒙层，防止触摸穿透  注意: app端内android上暂不支持 | `boolean`                                  | `--`     |
+| success   | 接口调用成功的回调函数                                       | `(res: CallbackResult) => void`            | `--`     |
+| context   | 页面context;  仅在app端内生效                                | `any`                                      | `--`     |
+| toastType | toast基本样式  可选值： - 0: 纯文本;    - 1: 左边图标，右边文本;   - 2: 上面图标，下面文本;  仅在app端内生效 | 0 \| 1 \| 2                                | 2        |
+| gravity   | toast上下对齐方式  可选值：\- 0: 居中对齐; \- 1: 居上对齐; \- 2: 居下对齐;  仅在app端内生效 | 0 \| 1 \| 2                                | 2        |
+
+
+
+
+
+
+
+### hideToast
+
+| 属性名   | 描述                                             | 类型                            | 默认值 |
+| -------- | ------------------------------------------------ | ------------------------------- | ------ |
+| complete | 接口调用结束的回调函数（调用成功、失败都会执行） | `(res: CallbackResult) => void` | `--`   |
+| fail     | 接口调用失败的回调函数                           | `(res: CallbackResult) => void` | `--`   |
+| success  | 接口调用成功的回调函数                           | `(res: CallbackResult) => void` | `--`   |
+| context  | 页面context;  仅在app端内生效                    | `any`                           | `--`   |
+
+
+
+
+
+### showModal
+
+| 属性名       | 描述                                               | 类型                                      | 默认值 |
+| ------------ | -------------------------------------------------- | ----------------------------------------- | ------ |
+| cancelColor  | 取消按钮的文字颜色，必须是 16 进制格式的颜色字符串 | `string`                                  | `--`   |
+| cancelText   | 取消按钮的文字，最多 4 个字符                      | `string`                                  | `--`   |
+| complete     | 接口调用结束的回调函数（调用成功、失败都会执行）   | `(res: CallbackResult) => void`           | `--`   |
+| confirmColor | 确认按钮的文字颜色，必须是 16 进制格式的颜色字符串 | `string`                                  | `--`   |
+| confirmText  | 确认按钮的文字，最多 4 个字符                      | `string`                                  | `--`   |
+| content      | 提示的内容                                         | `string`                                  | `--`   |
+| fail         | 接口调用失败的回调函数                             | `(res: CallbackResult) => void`           | `--`   |
+| showCancel   | 是否显示取消按钮                                   | `boolean`                                 | `--`   |
+| success      | 接口调用成功的回调函数                             | `(result: SuccessCallbackResult) => void` | `--`   |
+| title        | 提示的标题                                         | `string`                                  | `--`   |
+| context      | 页面context;  仅在app端内生效                      | `any`                                     | `--`   |
+
+
+
+### showActionSheet
+
+| 属性名    | 描述                                             | 类型                                      | 默认值 |
+| --------- | ------------------------------------------------ | ----------------------------------------- | ------ |
+| alertText | 警示文案                                         | `string`                                  | `--`   |
+| itemList  | 按钮的文字数组，数组长度最大为 6                 | `string[]`                                | `--`   |
+| complete  | 接口调用结束的回调函数（调用成功、失败都会执行） | `(res: CallbackResult) => void`           | `--`   |
+| fail      | 接口调用失败的回调函数                           | `(res: CallbackResult) => void`           | `--`   |
+| itemColor | 按钮的文字颜色                                   | `string`                                  | `--`   |
+| success   | 接口调用成功的回调函数                           | `(result: SuccessCallbackResult) => void` | `--`   |
+| context   | 页面context;  仅在app端内生效                    | `any`                                     | `--`   |
+

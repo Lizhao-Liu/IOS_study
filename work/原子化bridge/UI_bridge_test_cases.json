@@ -1,0 +1,179 @@
+
+
+/* action sheet
+
+*/
+{
+  "title": "test title",
+  "items": ["test button A", "test button B", "test button C"],
+  "itemColor": "#333333"
+}
+
+{
+  "title": "test title",
+  "items": ["test button A", "test button B", "test button C", "test button D", "test button E", "test button F"],
+  "itemColor": "#333333"
+}
+
+// 异常情况
+{
+  "title": "test title",
+  "items": [],
+  "itemColor": "#333333"
+}
+
+{
+  "title": "test title",
+  "items": ["test button A", "test button B", "test button C", "test button D", "test button E", "test button F", "test button G"],
+  "itemColor": "#333333"
+}
+
+{
+  "title": "",
+  "items": ["test button A", "test button B", "test button C"],
+  "itemColor": "#333333"
+}
+
+
+
+
+// showDialog
+{
+  "title": "对话框标题",
+  "content": {
+    "contentText": "描述文案建议控制在三行内，告知当前状态、信息和解决方法等内容",
+    "contentColor": "#666666",
+    "contentAlignment": "0",
+    "maxLinesOfContent": "3"
+  },
+  "image": "https://upload-images.jianshu.io/upload_images/5809200-4de5440a56bff58f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+  "buttons": [{
+    "text": "取消",
+    "color": "#666666"
+  }, {
+    "text": "确认",
+    "color": "#FF7000"
+  }],
+  "buttonOrientation": 0,
+  "showCloseBtn": false,
+  "canceledOnTouchOutside": false
+}
+
+{
+    "title": "对话框标题",
+    "content": {
+        "contentText": "描述文案建议控制在三行内，告知当前状态、信息和解决方法等内容",
+        "contentColor": "#666666",
+        "contentAlignment": "0",
+        "maxLinesOfContent": "3"
+    },
+    "buttons": [{
+        "text": "按钮",
+        "color": "#FF7000"
+    }],
+    "buttonOrientation": 0,
+    "showCloseBtn": false,
+    "canceledOnTouchOutside": false
+}
+
+{
+    "title": "test dialog title",
+    "content": {
+      "contentText": "",
+      "contentColor": "#333333",
+      "contentAlignment": "0",
+      "maxLinesOfContent": "3"
+    },
+    "buttons": [{
+      "text": "取消",
+      "color": "#666666"
+    }, {
+      "text": "确认",
+      "color": "#FF7000"
+    }],
+    "buttonOrientation": 0,
+    "showCloseBtn": false,
+    "canceledOnTouchOutside": false
+  }
+
+{
+  "statusIcon": "https://imagecdn.ymm56.com/ymmfile/apprn-package/toast/success.png",
+  "content": {
+    "contentText": "描述文案建议控制在三行内，告知当前状态、信息和解决方法等内容",
+    "contentColor": "#666666",
+    "contentAlignment": "0",
+    "maxLinesOfContent": "3"
+    },
+    "buttons": [{
+        "text": "按钮一",
+        "color": "#666666"
+    }, {
+        "text": "按钮二",
+        "color": "#666666"
+    },{
+        "text": "按钮三",
+        "color": "#FF7000"
+    }],
+  "buttonOrientation": 0,
+  "showCloseBtn": false,
+  "canceledOnTouchOutside": true
+}
+
+{
+  "title": "test dialog title",
+  "content": {
+        "contentText": "描述文案建议控制在三行内，告知当前状态、信息和解决方法等内容",
+        "contentColor": "#666666",
+        "contentAlignment": "0",
+        "maxLinesOfContent": "3"
+    },
+  "image": "https://upload-images.jianshu.io/upload_images/5809200-4de5440a56bff58f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240",
+  "buttons": [{
+    "text": "button A",
+    "color": "#333333"
+  }, {
+    "text": "button B",
+    "color": "#333333"
+  }],
+  "buttonOrientation": 1,
+  "showCloseBtn": true,
+  "canceledOnTouchOutside": true
+}
+
+
+
+{
+    "title": "toast title",
+    "mask": true,
+    "delay": 0
+  }
+
+{
+  "title": "toast title 1.5s 自动消失",
+  "toastType": 1,
+  "image": "https://imagecdn.ymm56.com/ymmfile/apprn-package/toast/success.png",
+  "mask": false
+}
+
+{
+  "title": "toast title 1.5s 自动消失",
+  "delay": 1500
+  "mask": false
+}
+
+
+
+{
+  "reason":"成功"，
+  "data":{
+      "index":1
+  },
+  "code":0
+}
+
+
+
+{
+  "reason":"成功"，
+  "code":0
+}
