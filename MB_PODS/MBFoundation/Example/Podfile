@@ -1,0 +1,154 @@
+source "git@code.amh-group.com:iOSYmm/mb-specrepo.git"
+source "git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git"
+
+use_frameworks! :linkage => :static
+
+def mb_pod_post_install()
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings["HEADER_SEARCH_PATHS"] = ["$(inherited)", "$(BUILT_PRODUCTS_DIR)/$(CONTENTS_FOLDER_PATH)/Headers"]
+        config.build_settings["ENABLE_BITCODE"] = "NO"
+        config.build_settings["IPHONEOS_DEPLOYMENT_TARGET"] = "11.0"
+        #                config.build_settings['GCC_PRECOMPILE_PREFIX_HEADER'] = 'NO'
+        # Debug 下不不编译dsym，用于减少运行时的 warning
+        config.build_settings["DEBUG_INFORMATION_FORMAT"] = "dwarf"
+        config.build_settings["DEVELOPMENT_TEAM"] = "33NTY77JS5"
+        #                config.build_settings['CLANG_ENABLE_MODULES'] = 'NO'
+        #                config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = ['$(inherited)', 'DEBUG=1']
+      end
+    end
+  end
+end
+
+mb_pod_post_install()
+
+platform :ios, "11.0"
+#use_frameworks! :linkage => :static
+
+inhibit_all_warnings!
+#use_frameworks!
+use_modular_headers!
+
+target "MBFoundation_Example" do
+  pod "MBFoundation", path: "../", :inhibit_warnings => false
+  
+  target "MBFoundation_Tests" do
+    inherit! :search_paths
+    
+#    pod "MBToolKit", git: "git@code.amh-group.com:iOSYmm/MBToolKit.git", branch: "test/20220113_Foundation"
+    pod "Quick"
+    pod "Nimble"
+  end
+end
+
+# 🐂🍺 https://rubydoc.info/gems/cocoapods/Pod/Installer/
+# 最大的好处在于将project和target之间的依赖管理、配置参数继承关系
+# 想一下如下几种情况
+# 1、单project多target（例如我们的宿主工程）
+# 2、多project多target（少见，但不是不可能）
+# 3、单project多configuration（几乎是必然）
+# ......手动简直是个噩梦
+# 使用 Cocoapods Installer 则赋予了强大的结构化、可视化、有序化的特性，再也不发愁肉眼对比然后手动修改project或target的编译选项配置参数了
+# 你最好需要了解
+# 1、project、target之间的依赖、继承关系
+# 2、Xcode project-Configuration、project-Build Settings
+# 3、Xocde target-Build Settings
+# 4、pod install背后都做了哪些事情
+
+# pre_install 阶段
+#pre_install do |installer|
+#end
+#
+## post_install阶段
+#
+#post_install do |installer|
+#
+#  puts "╟ installer"
+#  installer.instance_variables.each do |variableName|
+#      puts "  ╟ #{variableName}"
+#  end
+#
+#  puts "#{installer.pod_targets}"
+#  puts "#{installer.pods_project}"
+#  puts "#{installer.generated_projects}"
+#  puts "#{installer.generated_pod_targets}"
+#
+#  puts "  ╟ installer.public_methods"
+#  installer.public_methods.each do |method|
+#      puts "    ┣ #{method}"
+#  end
+#  puts "##### post_install end #####"
+#
+#  # 1、获取到 宿主Project（因为目前我们的宿主是单Project多Target的结构）
+#  project = installer.generated_projects.at(0)
+#
+#  # 2、获取到 宿主Project 下面所有的 Target
+#  project_targets = project.targets
+#
+#  # 3、获取到 Pods Project
+#  pods_project = installer.pods_project
+#
+#  # 4、获取到 Pods Project 下面管理的所有 Pod Target
+#  pods_targets = pods_project.targets
+#
+#  # puts 为在终端打印方法
+#  puts "##### post_install start #####"
+#
+#  installer.generated_projects.each do |project|
+#
+#    project.targets.each do |target|
+#
+#      target.build_configurations do |config|
+#
+#        config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['$(inherited) -D ']
+#
+#        if config.name.include?("Debug")
+#          config.build_settings['OTHER_SWIFT_FLAGS'] << 'DEBUG'
+#          end
+#
+#        end
+#
+#      end
+#
+#  end
+
+# 脚本1：宿主 Project All Targets【自定义添加或更新 Build Settings 参数】
+
+#  project_targets.each do |target|
+#
+#    target.build_configurations.each do |config|
+#
+#      config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['$(inherited) -D ']
+#
+#      if config.name.include?("Debug")
+#
+#        # 添加 Swift Other Flags 自定义预处理头参数
+#        config.build_settings['OTHER_SWIFT_FLAGS'] << 'RSH'
+#
+#        end
+#
+#      end
+#
+#    end
+
+# 脚本2：Pods Project All Targets【自定义添加或更新 Build Settings 参数】
+
+#  pods_targets.each do |target|
+#
+#    target.build_configurations.each do |config|
+#
+#      config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['$(inherited) -D ']
+#
+#      if config.name.include?("Debug")
+#
+#        # 添加 Swift Other Flags 自定义预处理头参数
+#        config.build_settings['OTHER_SWIFT_FLAGS'] << 'RSH'
+#
+#        end
+#
+#      end
+#
+#    end
+
+#  end

@@ -1,0 +1,27 @@
+source 'git@code.amh-group.com:iOSYmm/mb-specrepo.git'
+source 'git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git'  # 满帮内网第三方库
+source 'git@code.amh-group.com:iOSYmm/mb-binary-specrepo.git'
+
+#use_frameworks!
+use_modular_headers!
+
+platform :ios, '10.0'
+
+target 'YMMBridgeLib_Example' do
+  pod 'YMMBridgeLib', :path => '../'
+  
+  pod 'MBBridgeLibDebug', :path => '../'
+  
+  
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+      end
+    end
+  end
+  
+  target 'YMMBridgeLib_Tests' do
+    
+  end
+end

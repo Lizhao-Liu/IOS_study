@@ -1,0 +1,23 @@
+source 'git@code.amh-group.com:iOSYmm/mb-specrepo.git'
+source 'git@code.amh-group.com:iOSYmm/mb-binary-specrepo.git'
+source 'git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git'  # 满帮内网第三方库
+
+platform :ios, '9.0'
+
+use_modular_headers!
+target 'HCBCodeScaner_Example' do
+  pod 'HCBCodeScaner', :path => '../'
+
+  pod 'MBProgressHUD', :git=>'git@code.amh-group.com:cocoapods/MBProgressHUD_framework.git', :tag=>'0.9.2', :modular_headers => true
+  pod 'AAChartKit', '5.0.4', :modular_headers => true
+  pod 'MJRefresh', '3.1.15.8', :modular_headers => true
+  pod 'YYText', '1.0.7', :modular_headers => true
+  pod 'Masonry', '1.0.2', :modular_headers => true
+  pod 'MBToolKit'
+  
+  target 'HCBCodeScaner_Tests' do
+    inherit! :search_paths
+
+
+  end
+end

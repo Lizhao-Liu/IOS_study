@@ -1,0 +1,3 @@
+include:
+  - project: 'MBFrontend/iOS/iosgitlabymls'
+    file: 'component_yml.yml'

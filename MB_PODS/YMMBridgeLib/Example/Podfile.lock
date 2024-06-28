@@ -1,0 +1,232 @@
+PODS:
+  - AAChartKit (5.0.4)
+  - DTCoreText (1.6.21.8):
+    - DTCoreText/Core (= 1.6.21.8)
+    - DTFoundation/Core (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/DTAnimatedGIF (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/DTHTMLParser (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/UIKit (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+  - DTCoreText/Core (1.6.21.8):
+    - DTFoundation/Core (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/DTAnimatedGIF (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/DTHTMLParser (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/UIKit (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+  - DTFoundation/Core (1.7.13.7)
+  - DTFoundation/DTAnimatedGIF (1.7.13.7)
+  - DTFoundation/DTHTMLParser (1.7.13.7):
+    - DTFoundation/Core (= 1.7.13.7)
+  - DTFoundation/UIKit (1.7.13.7):
+    - DTFoundation/Core
+  - IQKeyboardManager (5.0.6)
+  - JRSwizzle (1.0.0)
+  - libwebp (1.2.0):
+    - libwebp/demux (= 1.2.0)
+    - libwebp/mux (= 1.2.0)
+    - libwebp/webp (= 1.2.0)
+  - libwebp/demux (1.2.0):
+    - libwebp/webp
+  - libwebp/mux (1.2.0):
+    - libwebp/demux
+  - libwebp/webp (1.2.0)
+  - Masonry (1.1.2)
+  - MBBridgeLibDebug (0.3.0-beta6):
+    - Masonry
+    - MBDebug/ActivityMonitor
+    - MBDebugService
+    - MBFoundation (~> 0.4)
+    - MBUIKit
+    - YMMBridgeLib
+    - YMMModuleLib
+  - MBBuildPreLib (0.1.0)
+  - MBDebug/ActivityMonitor (1.6.7):
+    - Masonry
+    - MBUIKit
+  - MBDebugService (0.3.1):
+    - YMMModuleLib (~> 0.6)
+  - MBFoundation (0.4.5):
+    - MBFoundation/Algorithm (= 0.4.5)
+    - MBFoundation/Collection (= 0.4.5)
+    - MBFoundation/ContactsKit (= 0.4.5)
+    - MBFoundation/CoreTelephonyKit (= 0.4.5)
+    - MBFoundation/Extensions (= 0.4.5)
+    - MBFoundation/Global (= 0.4.5)
+    - MBFoundation/HTMLParser (= 0.4.5)
+    - MBFoundation/ManagerCenter (= 0.4.5)
+    - MBFoundation/OpenUDID (= 0.4.5)
+    - MBFoundation/Protocols (= 0.4.5)
+    - MBFoundation/SafeExtensions (= 0.4.5)
+    - MBFoundation/SwiftyJSON (= 0.4.5)
+    - MBFoundation/ToolKit (= 0.4.5)
+    - MBFoundation/Util (= 0.4.5)
+  - MBFoundation/Algorithm (0.4.5)
+  - MBFoundation/Collection (0.4.5)
+  - MBFoundation/ContactsKit (0.4.5)
+  - MBFoundation/CoreTelephonyKit (0.4.5)
+  - MBFoundation/Extensions (0.4.5):
+    - MBFoundation/Algorithm
+    - MBFoundation/Global
+    - MBFoundation/ToolKit
+  - MBFoundation/Global (0.4.5)
+  - MBFoundation/HTMLParser (0.4.5)
+  - MBFoundation/ManagerCenter (0.4.5)
+  - MBFoundation/OpenUDID (0.4.5)
+  - MBFoundation/Protocols (0.4.5)
+  - MBFoundation/SafeExtensions (0.4.5):
+    - MBFoundation/Util
+  - MBFoundation/SwiftyJSON (0.4.5)
+  - MBFoundation/ToolKit (0.4.5):
+    - Reachability
+  - MBFoundation/Util (0.4.5)
+  - MBLogLib (0.4.1)
+  - MBProgressHUD (0.9.2.3)
+  - MBUIKit (0.6.3.1):
+    - MBUIKit/AddImageListView (= 0.6.3.1)
+    - MBUIKit/AgreementView (= 0.6.3.1)
+    - MBUIKit/Base (= 0.6.3.1)
+    - MBUIKit/BaseUI (= 0.6.3.1)
+    - MBUIKit/Chart (= 0.6.3.1)
+    - MBUIKit/DocumentPicker (= 0.6.3.1)
+    - MBUIKit/FastClick (= 0.6.3.1)
+    - MBUIKit/Filter (= 0.6.3.1)
+    - MBUIKit/KeyBoard (= 0.6.3.1)
+    - MBUIKit/Refresh (= 0.6.3.1)
+    - MBUIKit/RichText (= 0.6.3.1)
+    - MBUIKit/Tabbar (= 0.6.3.1)
+    - MBUIKit/UIKitHook (= 0.6.3.1)
+    - MBUIKit/ViewModel (= 0.6.3.1)
+    - MBUIKit/XMLTextParser (= 0.6.3.1)
+  - MBUIKit/AddImageListView (0.6.3.1):
+    - MBUIKit/BaseUI
+  - MBUIKit/AgreementView (0.6.3.1):
+    - MBUIKit/BaseUI
+  - MBUIKit/Base (0.6.3.1):
+    - MBLogLib (~> 0.2)
+  - MBUIKit/BaseUI (0.6.3.1):
+    - DTCoreText (~> 1.6.21.0)
+    - Masonry
+    - MBFoundation
+    - MBProgressHUD (~> 0.9.2)
+    - MBUIKit/Base
+    - MBUIKit/ViewModel
+    - SDWebImage (~> 5.0)
+    - SDWebImageWebPCoder (~> 0.8)
+    - YYImage/WebP
+  - MBUIKit/Chart (0.6.3.1):
+    - AAChartKit (~> 5.0)
+  - MBUIKit/DocumentPicker (0.6.3.1)
+  - MBUIKit/FastClick (0.6.3.1)
+  - MBUIKit/Filter (0.6.3.1):
+    - MBUIKit/AddImageListView
+    - MBUIKit/BaseUI
+  - MBUIKit/KeyBoard (0.6.3.1):
+    - IQKeyboardManager (= 5.0.6)
+    - JRSwizzle (~> 1.0.0)
+    - Masonry (~> 1.0)
+    - MBUIKit/Base
+    - MBUIKit/BaseUI
+  - MBUIKit/Refresh (0.6.3.1):
+    - MJRefresh (= 3.7.2)
+  - MBUIKit/RichText (0.6.3.1):
+    - DTCoreText (~> 1.6.21.0)
+    - Masonry
+    - MBUIKit/Base
+  - MBUIKit/Tabbar (0.6.3.1):
+    - MBUIKit/BaseUI
+  - MBUIKit/UIKitHook (0.6.3.1):
+    - RSSwizzle (>= 0.1.0.1)
+  - MBUIKit/ViewModel (0.6.3.1)
+  - MBUIKit/XMLTextParser (0.6.3.1):
+    - MBUIKit/Base
+    - YYText (~> 1.0)
+  - MJRefresh (3.7.2)
+  - Reachability (3.5.1)
+  - RSSwizzle (0.1.0.1)
+  - SDWebImage (5.11.1.2):
+    - SDWebImage/Core (= 5.11.1.2)
+  - SDWebImage/Core (5.11.1.2)
+  - SDWebImageWebPCoder (0.8.4.2):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.10)
+  - YMMBridgeLib (1.7.13)
+  - YMMModuleLib (0.17.0):
+    - MBBuildPreLib
+    - MBFoundation (~> 0.3)
+    - YMMRouterLib (~> 0.25)
+  - YMMRouterLib (0.32.0):
+    - YMMRouterLib/RouterIntent (= 0.32.0)
+    - YMMRouterLib/RouterMatch (= 0.32.0)
+  - YMMRouterLib/RouterIntent (0.32.0)
+  - YMMRouterLib/RouterMatch (0.32.0)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
+  - YYText (1.0.7.2)
+
+DEPENDENCIES:
+  - MBBridgeLibDebug (from `../`)
+  - YMMBridgeLib (from `../`)
+
+SPEC REPOS:
+  "git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git":
+    - DTCoreText
+    - DTFoundation
+    - IQKeyboardManager
+    - JRSwizzle
+    - libwebp
+    - Masonry
+    - MJRefresh
+    - Reachability
+    - RSSwizzle
+    - SDWebImage
+    - SDWebImageWebPCoder
+    - YYImage
+    - YYText
+  "git@code.amh-group.com:iOSYmm/mb-binary-specrepo.git":
+    - YMMModuleLib
+  "git@code.amh-group.com:iOSYmm/mb-specrepo.git":
+    - AAChartKit
+    - MBBuildPreLib
+    - MBDebug
+    - MBDebugService
+    - MBFoundation
+    - MBLogLib
+    - MBProgressHUD
+    - MBUIKit
+    - YMMRouterLib
+
+EXTERNAL SOURCES:
+  MBBridgeLibDebug:
+    :path: "../"
+  YMMBridgeLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AAChartKit: 41d7c2b7bcdbb3f7fd193551915d19a5997e0eae
+  DTCoreText: db6c69bcb0af0f282541793bbd725d63ab838892
+  DTFoundation: e3a060701e8e455ee80dfdbcaff29f329b71da05
+  IQKeyboardManager: 4775166bcc1ee5ebfe34ae27ea3adc635fea140c
+  JRSwizzle: 18567ee17dbe3a00558d3edcf3ce3281e0fd8055
+  libwebp: 6a3ef2c6008ec2e9f70d995d1caa517f9d390ac8
+  Masonry: d73eebad4291d850d1408ee66f38890941cac357
+  MBBridgeLibDebug: e8115a20e83efcefd0b8f55ba01b7fdb6fbf9999
+  MBBuildPreLib: 36a01262ed4792afec163c1420bed0c60c3d6b08
+  MBDebug: ab3f7d60408246b3784fff17487f4ac6f6e5e5d9
+  MBDebugService: c45ec5627aa57c4aa8fcffa7c25b83f2fd7090f6
+  MBFoundation: 9b3160a85a2d2d06e4cec71d60a9f2499b66f849
+  MBLogLib: 7b5c43b6f74d81b43390550e216fe0548d5a1f3d
+  MBProgressHUD: 72532d10768eb16bf6f5a658bb9a994e01e1e17e
+  MBUIKit: 05f650bb94ac4336c40663e9f185efead501a2b5
+  MJRefresh: b326dd50847d56533ee16afc6e8925a22a3df43c
+  Reachability: e892c2ce59bd658961b181a0895af4ce7216c260
+  RSSwizzle: fc345cb0ce4696276d440956166de31cb1991bdf
+  SDWebImage: a3d86de7ef3ff0539354c8664d358cd955613ee9
+  SDWebImageWebPCoder: 1a1e9dfedff9632dcaeaafe19e11e9f17ce174ab
+  YMMBridgeLib: 67a0d664fc294853dcd09a2e87d48c6d4433db68
+  YMMModuleLib: 929fff5d64b48ce09d2ec93f04f4b3835213db69
+  YMMRouterLib: f14075aa8f4065c0ed1591fbb015c8c308e5df87
+  YYImage: e4a5cbfb648d8bb6a46b11506833d4ed0799ea38
+  YYText: 49ad3c22bb30c92a9a275e8e9def62b611c1673c
+
+PODFILE CHECKSUM: 9dc6912db38590de2c454b87283704511671133c
+
+COCOAPODS: 1.10.2

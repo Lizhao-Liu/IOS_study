@@ -1,0 +1,193 @@
+PODS:
+  - AAChartKit (5.0.4)
+  - DTCoreText (1.6.21.7):
+    - DTCoreText/Core (= 1.6.21.7)
+    - DTFoundation/Core (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/DTAnimatedGIF (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/DTHTMLParser (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/UIKit (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+  - DTCoreText/Core (1.6.21.7):
+    - DTFoundation/Core (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/DTAnimatedGIF (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/DTHTMLParser (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+    - DTFoundation/UIKit (<= 1.7.13.9, >= 1.7.13.6, ~> 1.7)
+  - DTFoundation/Core (1.7.13.7)
+  - DTFoundation/DTAnimatedGIF (1.7.13.7)
+  - DTFoundation/DTHTMLParser (1.7.13.7):
+    - DTFoundation/Core (= 1.7.13.7)
+  - DTFoundation/UIKit (1.7.13.7):
+    - DTFoundation/Core
+  - HCBCodeScaner (2.1.2):
+    - MBDoctorService (~> 0.1)
+    - MBFoundation (~> 0.1.14-beta0)
+    - MBProgressHUD (~> 0.9)
+    - MBToolKit (~> 0.1)
+    - MBUIKit (~> 0.1)
+    - YMMRouterLib (~> 0.2)
+  - IQKeyboardManager (5.0.6)
+  - JRSwizzle (1.0.0)
+  - Masonry (1.0.2)
+  - MBDoctorService (0.1.15):
+    - YMMModuleLib (~> 0.4)
+  - MBFoundation (0.1.14-beta0):
+    - MBFoundation/Algorithm (= 0.1.14-beta0)
+    - MBFoundation/Collection (= 0.1.14-beta0)
+    - MBFoundation/ContactsKit (= 0.1.14-beta0)
+    - MBFoundation/CoreTelephonyKit (= 0.1.14-beta0)
+    - MBFoundation/Extensions (= 0.1.14-beta0)
+    - MBFoundation/Global (= 0.1.14-beta0)
+    - MBFoundation/OpenUDID (= 0.1.14-beta0)
+    - MBToolKit (~> 0.4)
+  - MBFoundation/Algorithm (0.1.14-beta0):
+    - MBToolKit (~> 0.4)
+  - MBFoundation/Collection (0.1.14-beta0):
+    - MBToolKit (~> 0.4)
+  - MBFoundation/ContactsKit (0.1.14-beta0):
+    - MBToolKit (~> 0.4)
+  - MBFoundation/CoreTelephonyKit (0.1.14-beta0):
+    - MBToolKit (~> 0.4)
+  - MBFoundation/Extensions (0.1.14-beta0):
+    - MBFoundation/Algorithm
+    - MBFoundation/Global
+    - MBToolKit (~> 0.4)
+  - MBFoundation/Global (0.1.14-beta0):
+    - MBToolKit (~> 0.4)
+  - MBFoundation/OpenUDID (0.1.14-beta0):
+    - MBToolKit (~> 0.4)
+  - MBProgressHUD (0.9.2)
+  - MBToolKit (0.4.6):
+    - DTCoreText (~> 1.6.21.0)
+    - MBProgressHUD (= 0.9.2)
+    - Reachability (~> 3.5.0)
+    - YYImage
+    - YYImage/WebP
+  - MBUIKit (0.4.3):
+    - MBUIKit/AddImageListView (= 0.4.3)
+    - MBUIKit/AgreementView (= 0.4.3)
+    - MBUIKit/Base (= 0.4.3)
+    - MBUIKit/BaseUI (= 0.4.3)
+    - MBUIKit/Chart (= 0.4.3)
+    - MBUIKit/Filter (= 0.4.3)
+    - MBUIKit/KeyBoard (= 0.4.3)
+    - MBUIKit/Refresh (= 0.4.3)
+    - MBUIKit/RichText (= 0.4.3)
+    - MBUIKit/Tabbar (= 0.4.3)
+    - MBUIKit/ViewModel (= 0.4.3)
+    - MBUIKit/XMLTextParser (= 0.4.3)
+  - MBUIKit/AddImageListView (0.4.3):
+    - MBUIKit/BaseUI
+  - MBUIKit/AgreementView (0.4.3):
+    - MBUIKit/BaseUI
+  - MBUIKit/Base (0.4.3)
+  - MBUIKit/BaseUI (0.4.3):
+    - DTCoreText (~> 1.6.21.0)
+    - Masonry
+    - MBProgressHUD (= 0.9.2)
+    - MBUIKit/Base
+    - MBUIKit/ViewModel
+    - SDWebImage (~> 4.3)
+  - MBUIKit/Chart (0.4.3):
+    - AAChartKit (~> 5.0)
+  - MBUIKit/Filter (0.4.3):
+    - MBUIKit/AddImageListView
+    - MBUIKit/BaseUI
+  - MBUIKit/KeyBoard (0.4.3):
+    - IQKeyboardManager (= 5.0.6)
+    - JRSwizzle (~> 1.0.0)
+    - Masonry (~> 1.0)
+    - MBUIKit/Base
+    - MBUIKit/BaseUI
+  - MBUIKit/Refresh (0.4.3):
+    - MJRefresh (= 3.1.15.8)
+  - MBUIKit/RichText (0.4.3):
+    - DTCoreText (~> 1.6.21.0)
+    - Masonry
+    - MBUIKit/Base
+  - MBUIKit/Tabbar (0.4.3):
+    - MBUIKit/BaseUI
+  - MBUIKit/ViewModel (0.4.3)
+  - MBUIKit/XMLTextParser (0.4.3):
+    - MBUIKit/Base
+    - YYText (~> 1.0)
+  - MJRefresh (3.1.15.8)
+  - Reachability (3.5.1)
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
+  - YMMModuleLib (0.6.3):
+    - MBToolKit (~> 0.3)
+    - YMMRouterLib (~> 0.25)
+  - YMMRouterLib (0.26.6)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - AAChartKit (= 5.0.4)
+  - HCBCodeScaner (from `../`)
+  - Masonry (= 1.0.2)
+  - "MBProgressHUD (from `git@code.amh-group.com:cocoapods/MBProgressHUD_framework.git`, tag `0.9.2`)"
+  - MJRefresh (= 3.1.15.8)
+  - YYText (= 1.0.7)
+
+SPEC REPOS:
+  "git@code.amh-group.com:cocoapods/mb-thirdpartyspecrepo.git":
+    - DTCoreText
+    - DTFoundation
+    - IQKeyboardManager
+    - JRSwizzle
+    - Masonry
+    - Reachability
+    - SDWebImage
+    - YYImage
+    - YYText
+  "git@code.amh-group.com:iOSYmm/mb-binary-specrepo.git":
+    - AAChartKit
+    - MJRefresh
+    - YMMRouterLib
+  "git@code.amh-group.com:iOSYmm/mb-specrepo.git":
+    - MBDoctorService
+    - MBFoundation
+    - MBToolKit
+    - MBUIKit
+    - YMMModuleLib
+
+EXTERNAL SOURCES:
+  HCBCodeScaner:
+    :path: "../"
+  MBProgressHUD:
+    :git: "git@code.amh-group.com:cocoapods/MBProgressHUD_framework.git"
+    :tag: 0.9.2
+
+CHECKOUT OPTIONS:
+  MBProgressHUD:
+    :git: "git@code.amh-group.com:cocoapods/MBProgressHUD_framework.git"
+    :tag: 0.9.2
+
+SPEC CHECKSUMS:
+  AAChartKit: 298ec69d5652f7ef639c9a92392a0a66c4fdd0be
+  DTCoreText: 44c2c1b5c75503027b8929874cd154fac70d9238
+  DTFoundation: e3a060701e8e455ee80dfdbcaff29f329b71da05
+  HCBCodeScaner: 4194ad2ad572a084f4208439940580edb420fa1c
+  IQKeyboardManager: 4775166bcc1ee5ebfe34ae27ea3adc635fea140c
+  JRSwizzle: 18567ee17dbe3a00558d3edcf3ce3281e0fd8055
+  Masonry: a32806a7f76c91cb23ac49cc1d78baada0d91cd0
+  MBDoctorService: 9b1b0bf860d8bde104adc88755810acb91d084dd
+  MBFoundation: 6f71a1388a58941dc12db939df9877272da67a1c
+  MBProgressHUD: 22ebfa26e302618fa7720b9bfa7899502e4b995f
+  MBToolKit: 42cf31d3507e47b88c2668c9d33d6ffa6711f304
+  MBUIKit: c71142456d9d962ce99bda8b37ab6f0a670de2bf
+  MJRefresh: e79db7636b35ad9ba33e0e1afb5ae6244f540bf6
+  Reachability: e892c2ce59bd658961b181a0895af4ce7216c260
+  SDWebImage: ff6c31166c13ace68c521e6432ab28c52acf7b2f
+  YMMModuleLib: b07708912578c59ea1994ccdf0fd464ebc774bdb
+  YMMRouterLib: e0eb74c260f6fe88525daea0af0e0089c74d767a
+  YYImage: e4a5cbfb648d8bb6a46b11506833d4ed0799ea38
+  YYText: 457e49df729d876df47fb31d3101c69345c7c18e
+
+PODFILE CHECKSUM: 15d55b97556645d470bd8320b4dab416fc6d5a61
+
+COCOAPODS: 1.10.1

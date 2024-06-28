@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jv8-GQ-0cW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HCBCodeScaner Demo-->
+        <scene sceneID="h61-lU-WBG">
+            <objects>
+                <tableViewController title="HCBCodeScaner Demo" id="IX9-9r-OMX" customClass="HCBViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="aQl-6P-7zM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="test scaner" id="T8r-aC-SaM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="MDO-6C-KOH" style="IBUITableViewCellStyleDefault" id="o1O-qK-dUT">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o1O-qK-dUT" id="eFz-XH-k4f">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="扫一扫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MDO-6C-KOH">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Xo0-nJ-MBd" kind="show" id="ZKw-g1-osG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="BqV-AZ-Bcx" style="IBUITableViewCellStyleDefault" id="wip-Km-O1n">
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wip-Km-O1n" id="jwI-Kb-cKQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="识别图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BqV-AZ-Bcx">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="9PD-dH-sv0" kind="show" id="oVb-1z-eo0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="IX9-9r-OMX" id="3od-ml-Otb"/>
+                            <outlet property="delegate" destination="IX9-9r-OMX" id="tDU-XU-BTr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="MxP-vw-tQj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DhW-fx-LNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="220"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="KU4-a1-T9m">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1L-Si-n2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Scan" id="Xo0-nJ-MBd" customClass="HCBCodeScanerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MB6-yB-Csx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KJp-3b-Z21"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TxA-vN-sK7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1334" y="-108"/>
+        </scene>
+        <!--Scan Image-->
+        <scene sceneID="W40-SR-bPI">
+            <objects>
+                <viewController title="Scan Image" id="9PD-dH-sv0" customClass="HCBScanImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K6i-iK-ZU4"/>
+                        <viewControllerLayoutGuide type="bottom" id="B6L-6h-kSq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HRK-To-10s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Result" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efp-18-7aq">
+                                <rect key="frame" x="147" y="461" width="81" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nos-6g-smX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nos-6g-smX" secondAttribute="height" multiplier="1:1" id="2Zf-b1-nWH"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4Zx-yO-rT6" appends="YES" id="Drd-Y6-cyk"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kh-S2-ff2">
+                                <rect key="frame" x="15" y="614" width="345" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="fkv-KX-V3J"/>
+                                </constraints>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="scan" destination="9PD-dH-sv0" eventType="touchUpInside" id="uGB-eY-L4x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Efp-18-7aq" firstAttribute="top" secondItem="nos-6g-smX" secondAttribute="bottom" constant="22" id="DPF-0k-3C3"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Efp-18-7aq" secondAttribute="trailing" constant="8" id="HCV-ER-QnA"/>
+                            <constraint firstItem="6Kh-S2-ff2" firstAttribute="leading" secondItem="HRK-To-10s" secondAttribute="leading" constant="15" id="PhV-zh-Miv"/>
+                            <constraint firstItem="Efp-18-7aq" firstAttribute="centerX" secondItem="nos-6g-smX" secondAttribute="centerX" id="WnY-31-Zcq"/>
+                            <constraint firstAttribute="trailing" secondItem="6Kh-S2-ff2" secondAttribute="trailing" constant="15" id="eUO-cR-nDD"/>
+                            <constraint firstItem="Efp-18-7aq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HRK-To-10s" secondAttribute="leading" constant="8" id="mH3-iM-14m"/>
+                            <constraint firstAttribute="trailing" secondItem="nos-6g-smX" secondAttribute="trailing" id="qsG-wO-Jb5"/>
+                            <constraint firstItem="nos-6g-smX" firstAttribute="top" secondItem="K6i-iK-ZU4" secondAttribute="bottom" id="rJe-ub-Jbs"/>
+                            <constraint firstItem="nos-6g-smX" firstAttribute="leading" secondItem="HRK-To-10s" secondAttribute="leading" id="s8x-DF-FbE"/>
+                            <constraint firstItem="B6L-6h-kSq" firstAttribute="top" secondItem="6Kh-S2-ff2" secondAttribute="bottom" constant="8" id="zhh-8i-pPW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nos-6g-smX" id="mNX-A8-wg0"/>
+                        <outlet property="label" destination="Efp-18-7aq" id="ciC-V3-yfk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9r-RR-XVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4Zx-yO-rT6">
+                    <connections>
+                        <action selector="tap:" destination="9PD-dH-sv0" id="G9h-3P-rXp"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1333.5999999999999" y="567.16641679160421"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VmA-Md-5Ta">
+            <objects>
+                <navigationController id="Jv8-GQ-0cW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G3F-u0-YyI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IX9-9r-OMX" kind="relationship" relationship="rootViewController" id="1ve-jm-zjd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4U-Lq-5so" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-487" y="220"/>
+        </scene>
+    </scenes>
+</document>
